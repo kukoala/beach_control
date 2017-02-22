@@ -1,0 +1,431 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T5::TIME</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+</head>
+
+
+<style>
+
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .875em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ede7f6;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+
+    }
+
+    #time-title {
+
+        display: none;
+
+    }
+
+    #time-title-1 {
+
+        display: block;
+
+    }
+
+    .t5corpo {
+
+        background-color: RGBA(134,134,255,1);
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+
+
+    }
+
+    .t5one {
+
+        /*background-color: #cccccc;*/
+        width: 23%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .t5two {
+
+        /*background-color: cadetblue;*/
+        width: 23%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .t5middle {
+
+        /*background-color: #000;*/
+        width: 8%;
+        height: 100%;
+
+    }
+
+    .t5three {
+
+        /*background-color: #cFbbFF;*/
+        width: 23%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .t5four {
+
+        /*background-color: #ba68c8;*/
+        width: 23%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .t5one button {
+
+        border: none;
+        background: url("../imagens/btPosicao1A.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 70%;
+        height: 70%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t5two button {
+
+        border: none;
+        background: url("../imagens/btPosicao3A.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 70%;
+        height: 70%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t5middle button {
+
+        border: none;
+        background: url("../imagens/iconVs.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t5three button {
+
+        border: none;
+        background: url("../imagens/btPosicao4A.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 70%;
+        height: 70%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t5four button {
+
+        border: none;
+        background: url("../imagens/btPosicao2A.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 70%;
+        height: 70%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t5one span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .6875em;
+        /*font-weight: 600;*/
+        text-transform: uppercase;
+        color: #1a237e;
+        text-rendering: optimizelegibility;
+        margin: 0 auto;
+    }
+
+    .t5two span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .675em;
+        /*font-weight: 600;*/
+        text-transform: uppercase;
+        color: #1a237e;
+        text-rendering: optimizelegibility;
+        margin: 0 auto;
+    }
+
+    .t5three span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .6875em;
+        /*font-weight: 600;*/
+        text-transform: uppercase;
+        color: #880e4f;
+        text-rendering: optimizelegibility;
+        margin: 0 auto;
+    }
+
+    .t5four span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .6875em;
+        /*font-weight: 600;*/
+        text-transform: uppercase;
+        color: #880e4f;
+        text-rendering: optimizelegibility;
+        margin: 0 auto;
+    }
+
+    .t5rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t5selection-wrapper {
+
+        width: 50%;
+        height: 100%;
+        display: flex;
+
+    }
+
+    .t5selection-btn1 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t5selection-btn2 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t5selection-btn3 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t5selection-btn1 button {
+
+        border: none;
+        background: url("../imagens/btNao.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t5selection-btn2 button {
+
+        border: none;
+        background: url("../imagens/caranguejo.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 40%;
+        height: 40%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t5selection-btn3 button {
+
+        border: none;
+        background: url("../imagens/btSim.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+
+        .t5one span {
+
+            font-size: 1.3em;
+
+        }
+
+        .t5two span {
+
+            font-size: 1.3em;
+
+        }
+
+        .t5three span {
+
+            font-size: 1.3em;
+
+        }
+
+        .t5four span {
+
+            font-size: 1.3em;
+
+        }
+
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+
+        .t5one span {
+
+            font-size: 1.8em;
+
+        }
+
+        .t5two span {
+
+            font-size: 1.8em;
+
+        }
+
+        .t5three span {
+
+            font-size: 1.8em;
+
+        }
+
+        .t5four span {
+
+            font-size: 1.8em;
+
+        }
+    }
+
+</style>
+<!--TELA 05 (TIME)-->
+
+<div id="5" class="view">
+<!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="time-title">Escolha sua posição 000</span>
+            <span id="time-title-1">Escolha sua posição 111</span>
+        </div>
+    </div>
+
+<!--#############--SELEÇÃO DE TIME--#############-->
+    <div class="t5corpo">
+        <div class="t5one">
+            <button id="btnA"></button>
+            <span id="msg-position-A">Rafael</span>
+        </div>
+        <div class="t5two">
+            <button id="btnC"></button>
+            <span id="msg-position-C">José Astolfo</span>
+        </div>
+
+        <div class="t5middle">
+            <button></button>
+        </div>
+
+        <div class="t5three">
+            <button id="btnD"></button>
+            <span id="msg-position-D">Computador</span>
+        </div>
+        <div class="t5four">
+            <button id="btnB"></button>
+            <span id="msg-position-B">Vazio</span>
+        </div>
+    </div>
+
+<!--#############--SELEÇÃO DE RODAPE--#############-->
+    <div class="t5rodape">
+        <div class="t5selection-wrapper">
+            <div class="t5selection-btn1">
+                <button id="t5-btn-voltar"></button>
+            </div>
+            <div class="t5selection-btn2">
+                <button id="#"></button>
+            </div>
+            <div class="t5selection-btn3">
+                <button id="t5-btn-avancar"></button>
+            </div>
+        </div>
+    </div>
+</div>

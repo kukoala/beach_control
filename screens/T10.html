@@ -1,0 +1,187 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T8::CONFIRMAÇÃO ENCERRAR PARTIDA</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+</head>
+
+
+<style>
+    /****************************TOPO****************************/
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,.5) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #b71c1c;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+        letter-spacing: .8pt;
+
+    }
+
+    /****************************CORPO****************************/
+    .t10corpo {
+
+        background-color: RGBA(134,134,255,.5);
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+    }
+
+    /************DIVs CENTRAIS************/
+    .t10one {
+
+        /*background-color: #cccccc;*/
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t10two {
+
+        /*background-color: #FFFFFF;*/
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    /************OPÇÕES DE MENU************/
+    .t10one button {
+
+        border:none;
+        background: url("../imagens/btSimVoto.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t10two button {
+
+        border:none;
+        background: url("../imagens/btNaoVoto.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    /************RODAPE************/
+
+    .t10rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t10-rodape-wrapper {
+
+        width: 70%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .t10-rodape-wrapper button {
+
+        border: none;
+        background: url("../imagens/crabController.gif") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+
+    }
+
+</style>
+<!--TELA 10 (CONFIRMAÇÃO ENCERRAMENTO DE PARTIDA)-->
+
+<div id="10" class="view">
+
+    <!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="pause-encerra-title">deseja encerrar a partida?</span>
+        </div>
+    </div>
+
+    <!--#############--CONFIRMAÇÃO DE ENCERRAMENTO--#############-->
+    <div class="t10corpo">
+        <div class="t10one"><button id="t10-btn-sim"></button></div>
+        <div class="t10two"><button id="t10-btn-nao"></button></div>
+    </div>
+
+    <!--#############--RODAPE (PAUSADO)--#############-->
+    <div class="t10rodape">
+        <div class="t10-rodape-wrapper">
+            <button id="t10-btn-pausa"></button>
+        </div>
+    </div>
+</div>

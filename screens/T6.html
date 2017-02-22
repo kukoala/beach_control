@@ -1,0 +1,694 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T6::PERSONALIZAÇÃO</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+</head>
+
+
+<style>
+
+/*************TOPO*************/
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: flex;
+        -webkit-align-items: center;
+        -webkit-flex-direction: column;
+        -webkit-justify-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .875em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ede7f6;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+
+    }
+
+/*************CORPO*************/
+
+    .t6corpo {
+
+        background-color: RGBA(134,134,255,1);
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+    }
+
+/*************CONTAINER LADO ESQUERDO*************/
+
+    .t6left-wrapper {
+
+        width: 50%;
+        height: 100%;
+
+    }
+
+/*************SELECAO AVATAR*************/
+
+    .t6one {
+
+        /*background-color: #cccccc;*/
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t6selection-wrapper {
+
+        width: 50%;
+        height: 100%;
+        display: flex;
+
+    }
+
+    .t6avatar-btn1 {
+
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t6avatar-btn2 {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t6avatar-btn3 {
+
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t6avatar-btn1 button {
+
+        border: none;
+        background: url("../imagens/btEscolhaEsq.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t6avatar-btn2 button {
+
+        border: none;
+        background: url("../imagens/amostraCorpo.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t6avatar-btn3 button {
+
+        border: none;
+        background: url("../imagens/btEscolhaDir.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+/*************SELECAO PÉ*************/
+
+    .t6two {
+
+        /*background-color: cadetblue;*/
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t6pe-btn1 {
+
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t6pe-btn2 {
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t6pe-btn3 {
+
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t6pe-btn1 button {
+
+        border: none;
+        background: url("../imagens/btEscolhaEsq.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t6pe-btn2 button {
+
+        border: none;
+        background: url("../imagens/amostraPe.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t6pe-btn3 button {
+
+        border: none;
+        background: url("../imagens/btEscolhaDir.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+/*************CONTAINER LADO DIREITO*************/
+
+    .t6right-wrapper {
+
+        /*background-color: #ccffcc;*/
+        width: 50%;
+        height: 100%;
+
+    }
+
+/*************VELOCIDADE*************/
+
+    .t6three-wrapper {
+
+        /*background-color: #FFFFFF;*/
+        width: 100%;
+        height: 25%;
+        display: flex;
+
+    }
+
+    .t6three-left {
+
+        /*background-color: #c5e1a5;*/
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+
+    }
+
+    .t6three-right {
+
+        width: 50%;
+        height: 100%;
+        background: url("../imagens/refEstatistica3.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+
+    }
+
+    .t6three-left span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .8em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #1a237e;
+        text-rendering: optimizelegibility;
+
+    }
+
+/*************PRECISÃO*************/
+
+    .t6four-wrapper {
+
+        /*background-color: #90caf9;*/
+        width: 100%;
+        height: 25%;
+        display: flex;
+
+    }
+
+    .t6four-left {
+
+        /*background-color: #ffcc80;*/
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+
+    }
+
+    .t6four-right {
+
+        /*background-color: #ff9800;*/
+        width: 50%;
+        height: 100%;
+        background: url("../imagens/refEstatistica4.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+
+    }
+
+    .t6four-left span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .8em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #1a237e;
+        text-rendering: optimizelegibility;
+
+    }
+
+/*************FORÇA*************/
+
+    .t6five-wrapper {
+
+        width: 100%;
+        height: 25%;
+        display: flex;
+
+    }
+
+    .t6five-left {
+
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+
+    }
+
+    .t6five-right {
+
+        width: 50%;
+        height: 100%;
+        background: url("../imagens/refEstatistica5.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+
+    }
+
+    .t6five-left span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .8em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #1a237e;
+        text-rendering: optimizelegibility;
+
+    }
+
+/*************PULO*************/
+
+    .t6six-wrapper {
+
+        width: 100%;
+        height: 25%;
+        display: flex;
+
+    }
+
+    .t6six-left {
+
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        align-content: flex-start;
+
+    }
+
+    .t6six-right {
+
+        width: 50%;
+        height: 100%;
+        background: url("../imagens/refEstatistica6.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+
+    }
+
+    .t6six-left span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .8em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #1a237e;
+        text-rendering: optimizelegibility;
+    }
+
+/*************RODAPE*************/
+
+    .t6rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t6selection-btn1 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t6selection-btn2 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t6selection-btn3 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t6selection-btn1 button {
+
+        border: none;
+        background: url("../imagens/btNao.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t6selection-btn2 button {
+
+        border: none;
+        background: url("../imagens/caranguejo.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 40%;
+        height: 40%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t6selection-btn3 button {
+
+        border: none;
+        background: url("../imagens/btSim.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 750px) {
+
+        .t6three-left span {
+
+            font-size: 1em;
+
+        }
+
+        .t6four-left span {
+
+            font-size: 1em;
+
+        }
+
+        .t6five-left span {
+
+            font-size: 1em;
+
+        }
+
+        .t6six-left span {
+
+            font-size: 1em;
+
+        }
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+
+        .t6three-left span {
+
+            font-size: 1.185em;
+
+        }
+
+        .t6four-left span {
+
+            font-size: 1.185em;
+
+        }
+
+        .t6five-left span {
+
+            font-size: 1.185em;
+
+        }
+
+        .t6six-left span {
+
+            font-size: 1.185em;
+
+        }
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+
+        .t6three-left span {
+
+            font-size: 1.6em;
+
+        }
+
+        .t6four-left span {
+
+            font-size: 1.6em;
+
+        }
+
+        .t6five-left span {
+
+            font-size: 1.6em;
+
+        }
+
+        .t6six-left span {
+
+            font-size: 1.6em;
+
+        }
+    }
+
+</style>
+
+<!--TELA 06 (PERSONALIZAÇÃO)-->
+
+<div id="6" class="view">
+
+<!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="personalizacao-title">Escolha seu personagem</span>
+        </div>
+    </div>
+
+<!--#############--CORPO#############-->
+<div class="t6corpo">
+
+<!--#############--CORPO ESQUERDO--#############-->
+        <div class="t6left-wrapper">
+
+<!--#############--SELEÇÃO DE AVATAR--#############-->
+            <div class="t6one">
+
+                <div class="t6selection-wrapper">
+
+                    <div class="t6avatar-btn1">
+                        <button id="btncorpo-ESQ"></button>
+                    </div>
+
+                    <div class="t6avatar-btn2">
+                        <button id="btn-corpo"></button>
+                    </div>
+
+                    <div class="t6avatar-btn3">
+                        <button id="btncorpo-DIR"></button>
+                    </div>
+                </div>
+            </div>
+
+<!--#############--SELEÇÃO DE PÉ--#############-->
+            <div class="t6two">
+
+                <div class="t6selection-wrapper">
+
+                    <div class="t6pe-btn1">
+                        <button id="btnpe-ESQ"></button>
+                    </div>
+
+                    <div class="t6pe-btn2">
+                        <button id="btn-pe"></button>
+                    </div>
+
+                    <div class="t6pe-btn3">
+                        <button id="btnpe-DIR"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--#############--CORPO DIREITO--#############-->
+        <div class="t6right-wrapper">
+
+<!--#############--VELOCIDADE--#############-->
+            <div class="t6three-wrapper">
+                <div class="t6three-left"><span>VELOCIDADE: </span></div>
+                <div class="t6three-right" id="msg-velocidade"></div>
+            </div>
+
+<!--#############--PRECISÃO--#############-->
+            <div class="t6four-wrapper">
+                <div class="t6four-left"><span>PRECISÃO: </span></div>
+                <div class="t6four-right" id="msg-precisao"></div>
+            </div>
+
+<!--#############--FORÇA--#############-->
+            <div class="t6five-wrapper">
+                <div class="t6five-left"><span>FORÇA: </span></div>
+                <div class="t6five-right" id="msg-forca"></div>
+            </div>
+
+<!--#############--PULO--#############-->
+            <div class="t6six-wrapper">
+                <div class="t6six-left"><span>PULO: </span></div>
+                <div class="t6six-right" id="msg-pulo"></div>
+            </div>
+        </div>
+
+    </div><!--CORPO-->
+
+<!--#############--RODAPÉ--#############-->
+    <div class="t6rodape">
+
+        <div class="t6selection-wrapper">
+
+            <div class="t6selection-btn1">
+                <button id="t6-btn-voltar"></button>
+            </div>
+
+            <div class="t6selection-btn2">
+                <button id="#"></button>
+            </div>
+
+            <div class="t6selection-btn3">
+                <button id="t6-btn-avancar"></button>
+            </div>
+        </div>
+    </div>
+</div>

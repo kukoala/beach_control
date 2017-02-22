@@ -1,0 +1,2918 @@
+/***********************************************************************************************************************************************/
+/* Configuração do navegador                                                                                                                   */
+/***********************************************************************************************************************************************/
+@import url('reset.css');
+
+
+/***********************************************************************************************************************************************/
+/* CSS Documento                                                                                                                               */
+/***********************************************************************************************************************************************/
+html{overflow:hidden;}
+canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
+body{background:#000;}
+.view {display:none;}
+
+/***********************************************************************************************************************************************/
+/*Estilização dos controles                                                                                                                    */
+/***********************************************************************************************************************************************/
+/*                                                              Controle1                                                                      */
+/***********************************************************************************************************************************************/
+
+
+#controle1Tela0 {margin:0 auto; background:url("../imagens/logoKukoalaSplash.png") RGBA(255,255,255,1) no-repeat center center; background-size:25%; width:100%; height:100%;}
+
+/**Tela 01**/
+#controle1Tela1 {margin:0 auto; background:url("../imagens/logoJogoSplash.png") RGBA(134,134,255,1) no-repeat center center; background-size:35%; width:100%; height:100%;}
+
+
+
+
+/***************************************TOPO (COMUM A TODAS AS PÁGINAS***********************************************/
+.topo {
+
+    margin:0 auto;
+    background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center;
+    background-size:15%;
+    width:100%;
+    height:30%;
+    text-align:center;
+
+}
+
+.topo-wrapper{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.topo span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .875em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ede7f6;
+    line-height: 150%;
+    text-rendering: optimizelegibility;
+
+}
+
+/***************FINAL TOPO***************/
+
+/***************************************SPLASH KUKOALA***********************************************/
+
+#controle1Tela0 {
+
+    margin:0 auto; background:url("../imagens/logoKukoalaSplash.png") RGBA(255,255,255,1) no-repeat center center;
+    background-size:25%;
+    width:100%;
+    height:100%;
+
+}
+
+/***************FINAL SPLASH KUKOALA***************/
+
+
+/***************************************SPLASH BEACH SOCCER***********************************************/
+
+#controle1Tela1 {
+
+    margin:0 auto; background:url("../imagens/logoJogoSplash.png") RGBA(134,134,255,1) no-repeat center center;
+    background-size:35%;
+    width:100%;
+    height:100%;
+
+}
+
+/***************FINAL BEACH SOCCER***************/
+
+
+/***************************************TELA 01 (SET CONTROL MASTER)***********************************************/
+
+.t1corpo {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.t1one {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t1one button {
+
+    border:none;
+    background: url("../imagens/touch.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+.t1rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t1rodape-btn2 {
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t1rodape-btn2 button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+/***************FINAL TELA 01 (SET CONTROL MASTER)***************/
+
+
+/***************************************TELA 02 (SET IDIOMA)***********************************************/
+
+.t2corpo {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.t2one {
+
+    background-color: RGBA(134,134,255,1);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t2one button {
+
+    border:none;
+    background: url("../imagens/btLinguaIngA.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t2two {
+
+    background-color: RGBA(134,134,255,1);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t2two button {
+
+    border: none;
+    background: url("../imagens/btLinguaPorA.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t2rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t2selection-wrapper {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+
+.t2selection-btn1 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t2selection-btn2 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t2selection-btn1 button {
+
+    border: none;
+    background: url("../imagens/btnVoltar.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t2selection-btn2 button {
+
+    border: none;
+    background: url("../imagens/caranguejo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 02 (SET IDIOMA***************/
+
+
+/***************************************TELA 03 (SET MODO DE JOGO)***********************************************/
+
+.t3corpo {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.t3one {
+
+    background-color: RGBA(134,134,255,1);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t3one button {
+
+    border:none;
+    background: url("../imagens/imgVs.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t3two {
+
+    background-color: RGBA(134,134,255,1);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t3two button {
+
+    border: none;
+    background: url("../imagens/imgTournament.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t3rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t3rodape-wrapper {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+
+.t3rodape-btn1 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t3rodape-btn2 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t3rodape-btn1 button {
+
+    border: none;
+    background: url("../imagens/btnVoltar.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t3rodape-btn2 button {
+
+    border: none;
+    background: url("../imagens/caranguejo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t3rodape-btn3 button {
+
+    border: none;
+    background: url("../imagens/btSim.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 03 (SET MODO DE JOGO)***************/
+
+
+/***************************************TELA 04 (SET CENARIO E BOLA)***********************************************/
+
+.t4corpo {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+
+.t4left-wrapper {
+
+    width: 65%;
+    height: 100%;
+
+}
+
+.t4one {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t4two {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t4three {
+
+    width: 35%;
+    height: 100%;
+    background: url("../imagens/qtdGol.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.t4selection-wrapper {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+
+.t4clima-btn1 {
+
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t4clima-btn2 {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t4clima-btn3 {
+
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t4clima-btn1 button {
+
+    border: none;
+    background: url("../imagens/btEscolhaEsq.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+.t4clima-btn2 button {
+
+    border: none;
+    background: url("../imagens/amostraCenario0.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t4clima-btn3 button {
+
+    border: none;
+    background: url("../imagens/btEscolhaDir.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t4bola-btn1 {
+
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t4bola-btn2 {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t4bola-btn3 {
+
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t4bola-btn1 button {
+
+    border: none;
+    background: url("../imagens/btEscolhaEsq.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+.t4bola-btn2 button {
+
+    border: none;
+    background: url("../imagens/amostraBola0.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t4bola-btn3 button {
+
+    border: none;
+    background: url("../imagens/btEscolhaDir.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t4rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.t4selection-btn1 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t4selection-btn2 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t4selection-btn3 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t4selection-btn1 button {
+
+    border: none;
+    background: url("../imagens/btNao.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t4selection-btn2 button {
+
+    border: none;
+    background: url("../imagens/caranguejo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t4selection-btn3 button {
+
+    border: none;
+    background: url("../imagens/btSim.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 04 (SET CENARIO E BOLA)***************/
+
+
+/***************************************TELA 05 (SET TIME)***********************************************/
+
+#time-title {
+
+    display: none;
+
+}
+
+#time-title-1 {
+
+    display: block;
+
+}
+
+.t5corpo {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.t5one {
+
+    /*background-color: #cccccc;*/
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.t5two {
+
+    /*background-color: cadetblue;*/
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.t5middle {
+
+    /*background-color: #000;*/
+    width: 8%;
+    height: 100%;
+
+}
+
+.t5three {
+
+    /*background-color: #cFbbFF;*/
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.t5four {
+
+    /*background-color: #ba68c8;*/
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.t5one button {
+
+    border: none;
+    background: url("../imagens/btPosicao1A.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t5two button {
+
+    border: none;
+    background: url("../imagens/btPosicao3A.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t5middle button {
+
+    border: none;
+    background: url("../imagens/iconVs.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t5three button {
+
+    border: none;
+    background: url("../imagens/btPosicao4A.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t5four button {
+
+    border: none;
+    background: url("../imagens/btPosicao2A.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t5one span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .6875em;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    color: #1a237e;
+    text-rendering: optimizelegibility;
+    margin: 0 auto;
+}
+
+.t5two span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .675em;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    color: #1a237e;
+    text-rendering: optimizelegibility;
+    margin: 0 auto;
+}
+
+.t5three span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .6875em;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    color: #880e4f;
+    text-rendering: optimizelegibility;
+    margin: 0 auto;
+}
+
+.t5four span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .6875em;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    color: #880e4f;
+    text-rendering: optimizelegibility;
+    margin: 0 auto;
+}
+
+.t5rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t5selection-wrapper {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+
+.t5selection-btn1 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t5selection-btn2 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t5selection-btn3 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t5selection-btn1 button {
+
+    border: none;
+    background: url("../imagens/btNao.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t5selection-btn2 button {
+
+    border: none;
+    background: url("../imagens/caranguejo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t5selection-btn3 button {
+
+    border: none;
+    background: url("../imagens/btSim.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 05 (SET TIME)***************/
+
+
+/***************************************TELA 06 (PERSONALIZACAO)***********************************************/
+
+.t6corpo {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+
+/*************CONTAINER LADO ESQUERDO*************/
+
+.t6left-wrapper {
+
+    width: 50%;
+    height: 100%;
+
+}
+
+/*************SELECAO AVATAR*************/
+
+.t6one {
+
+    /*background-color: #cccccc;*/
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t6selection-wrapper {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+
+.t6avatar-btn1 {
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t6avatar-btn2 {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t6avatar-btn3 {
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t6avatar-btn1 button {
+
+    border: none;
+    background: url("../imagens/btEscolhaEsq.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t6avatar-btn2 button {
+
+    border: none;
+    background: url("../imagens/amostraCorpo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t6avatar-btn3 button {
+
+    border: none;
+    background: url("../imagens/btEscolhaDir.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/*************SELECAO PÉ*************/
+
+.t6two {
+
+    /*background-color: cadetblue;*/
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t6pe-btn1 {
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t6pe-btn2 {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t6pe-btn3 {
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t6pe-btn1 button {
+
+    border: none;
+    background: url("../imagens/btEscolhaEsq.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t6pe-btn2 button {
+
+    border: none;
+    background: url("../imagens/amostraPe.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t6pe-btn3 button {
+
+    border: none;
+    background: url("../imagens/btEscolhaDir.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/*************CONTAINER LADO DIREITO*************/
+
+.t6right-wrapper {
+
+    /*background-color: #ccffcc;*/
+    width: 50%;
+    height: 100%;
+
+}
+
+/*************VELOCIDADE*************/
+
+.t6three-wrapper {
+
+    /*background-color: #FFFFFF;*/
+    width: 100%;
+    height: 25%;
+    display: flex;
+
+}
+
+.t6three-left {
+
+    /*background-color: #c5e1a5;*/
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+
+}
+
+.t6three-right {
+
+    width: 50%;
+    height: 100%;
+    background: url("../imagens/refEstatistica3.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.t6three-left span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1a237e;
+    text-rendering: optimizelegibility;
+
+}
+
+/*************PRECISÃO*************/
+
+.t6four-wrapper {
+
+    /*background-color: #90caf9;*/
+    width: 100%;
+    height: 25%;
+    display: flex;
+
+}
+
+.t6four-left {
+
+    /*background-color: #ffcc80;*/
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+
+}
+
+.t6four-right {
+
+    /*background-color: #ff9800;*/
+    width: 50%;
+    height: 100%;
+    background: url("../imagens/refEstatistica4.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.t6four-left span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1a237e;
+    text-rendering: optimizelegibility;
+
+}
+
+/*************FORÇA*************/
+
+.t6five-wrapper {
+
+    width: 100%;
+    height: 25%;
+    display: flex;
+
+}
+
+.t6five-left {
+
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+
+}
+
+.t6five-right {
+
+    width: 50%;
+    height: 100%;
+    background: url("../imagens/refEstatistica5.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.t6five-left span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1a237e;
+    text-rendering: optimizelegibility;
+
+}
+
+/*************PULO*************/
+
+.t6six-wrapper {
+
+    width: 100%;
+    height: 25%;
+    display: flex;
+
+}
+
+.t6six-left {
+
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+
+}
+
+.t6six-right {
+
+    width: 50%;
+    height: 100%;
+    background: url("../imagens/refEstatistica6.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.t6six-left span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1a237e;
+    text-rendering: optimizelegibility;
+}
+
+/*************RODAPE*************/
+
+.t6rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t6selection-btn1 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t6selection-btn2 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t6selection-btn3 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t6selection-btn1 button {
+
+    border: none;
+    background: url("../imagens/btNao.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t6selection-btn2 button {
+
+    border: none;
+    background: url("../imagens/caranguejo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t6selection-btn3 button {
+
+    border: none;
+    background: url("../imagens/btSim.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 06 (PERSONALIZACAO)***************/
+
+
+/***************************************TELA 07 (AGUARDANDO)***********************************************/
+
+.t7corpo {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/************CONTAINER VERSUS************/
+
+.t7one {
+
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.t7two {
+
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.t7middle {
+
+    width: 8%;
+    height: 100%;
+
+}
+
+.t7three {
+
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.t7four {
+
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/************CONTAINER PICS PLAYERS************/
+
+.t7p1 {
+
+    border: none;
+    background: url("../imagens/teste.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #1565c0;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+
+}
+
+.t7p2 {
+
+    border: none;
+    background: url("../imagens/teste2.jpg") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #1565c0;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+
+}
+
+.t7middle-vs {
+
+    border: none;
+    background: url("../imagens/iconVs.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t7p3 {
+
+    border: none;
+    background: url("../imagens/amostraBola8.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #1565c0;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+
+}
+
+.t7p4 {
+
+    border: none;
+    background: url("../imagens/refEstatistica6.png") no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: #1565c0;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+
+}
+
+/************STATUS DOS JOGADORES************/
+
+.t7statusbtn-A {
+
+    border: none;
+    background: url("../imagens/btNao.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t7statusbtn-B {
+
+    border: none;
+    background: url("../imagens/btSim.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t7statusbtn-C {
+
+    border: none;
+    background: url("../imagens/btSim.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t7statusbtn-D {
+
+    border: none;
+    background: url("../imagens/btNao.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/************NOME DOS JOGADORES************/
+
+.t7one span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .6875em;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    color: #1a237e;
+    text-rendering: optimizelegibility;
+    margin: 0 auto;
+}
+
+.t7two span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .675em;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    color: #1a237e;
+    text-rendering: optimizelegibility;
+    margin: 0 auto;
+}
+
+.t7three span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .6875em;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    color: #880e4f;
+    text-rendering: optimizelegibility;
+    margin: 0 auto;
+}
+
+.t7four span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .6875em;
+    /*font-weight: 600;*/
+    text-transform: uppercase;
+    color: #880e4f;
+    text-rendering: optimizelegibility;
+    margin: 0 auto;
+}
+
+/************RODAPE************/
+
+.t7rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t7selection-wrapper {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+
+}
+
+.t7selection-btn1 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t7selection-btn2 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t7selection-btn3 {
+
+    width: 33.3333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t7selection-btn1 button {
+
+    border: none;
+    background: url("../imagens/btNao.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t7selection-btn2 button {
+
+    border: none;
+    background: url("../imagens/caranguejo.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t7selection-btn3 button {
+
+    border: none;
+    background: url("../imagens/btSim.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 07 (AGUARDANDO)***************/
+
+
+/***************************************TELA 08 (CONTROLE)***********************************************/
+
+.t8corpo {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*************DIVs CENTRAIS*************/
+.t8one {
+
+    /*background-color: #cccccc;*/
+    width: 33.333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.t8two {
+
+    /*background-color: cadetblue;*/
+    width: 33.333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.t8three {
+
+    /*background-color: #FFFFFF;*/
+    width: 33.333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/*************GIFS PARA GUIA E SPAN*************/
+.t8one button {
+
+    border:none;
+    background: url("../imagens/acelL.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t8two button {
+
+    border:none;
+    background: url("../imagens/acelT.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t8three button {
+
+    border:none;
+    background: url("../imagens/acelF.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t8corpo span {
+
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: .8125em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ede7f6;
+    line-height: 150%;
+    text-rendering: optimizelegibility;
+    letter-spacing: .8pt;
+    color: #1a237e;
+
+}
+
+/*************RODAPE*************/
+
+.t8rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t8-pause {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t8-pause button {
+
+    border: none;
+    background: url("../imagens/btPare.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 08 (CONTROLE)***************/
+
+
+/***************************************TELA 09 (PAUSA)***********************************************/
+
+.t9corpo {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+
+/****************************DIVs CENTRAIS****************************/
+.t9one {
+
+    /*background-color: #cccccc;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t9two {
+
+    /*background-color: #FFFFFF;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+/****************************OPÇÕES DE MENU****************************/
+.t9one button {
+
+    border:none;
+    background: url("../imagens/btContinuar.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t9two button {
+
+    border:none;
+    background: url("../imagens/btMenu.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/****************************RODAPE****************************/
+
+.t9rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t9-rodape-wrapper {
+
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.t9-rodape-wrapper button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 09 (PAUSA)****************/
+
+
+/***************************************TELA 10 (CONFIRMACAO ENCERRAMENTO)***********************************************/
+
+.t10corpo {
+
+    background-color: RGBA(134,134,255,.5);
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+
+/************DIVs CENTRAIS************/
+.t10one {
+
+    /*background-color: #cccccc;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t10two {
+
+    /*background-color: #FFFFFF;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+/************OPÇÕES DE MENU************/
+.t10one button {
+
+    border:none;
+    background: url("../imagens/btSimVoto.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t10two button {
+
+    border:none;
+    background: url("../imagens/btNaoVoto.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/************RODAPE************/
+
+.t10rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t10-rodape-wrapper {
+
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.t10-rodape-wrapper button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 10 (CONFIRMACAO ENCERRAMENTO)****************/
+
+
+/***************************************TELA 11 (JOGO PARADO SLAVE)***********************************************/
+
+.t11corpo {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.t11one {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t11one button {
+
+    border:none;
+    background: url("../imagens/imgParado.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+.t11rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t11rodape-btn2 {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t11rodape-btn2 button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 11 (JOGO PARADO SLAVE)*****************/
+
+
+/***************************************TELA 13 (CHAVEAMENTO TORNEIO)***********************************************/
+
+#t13-msg-aguarde {
+
+    display: block;/*****ATIVA OU DESATIVA MENSAGEM*****/
+
+}
+
+#t13-msg-inativo {
+
+    display: none;/*****ATIVA OU DESATIVA MENSAGEM*****/
+
+}
+
+.t13corpo {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.t13one-master {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: block; /*****ATIVA OU DESATIVA DIV*****/
+
+}
+
+.t13one-master button {
+
+    border:none;
+    background: url("../imagens/btContinuar.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t13two-slave {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: none; /*****ATIVA OU DESATIVA DIV*****/
+
+}
+
+.t13two-slave button {
+
+    border:none;
+    background: url("../imagens/imgParado.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t13rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t13rodape-btn2 {
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t13rodape-btn2 button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 13 (CHAVEAMENTO TORNEIO)*****************/
+
+
+/***************************************TELA 14 (DESISTIR TORNEIO)***********************************************/
+
+.t14corpo {
+
+    background-color: RGBA(134,134,255,.5);
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+
+/*************DIVs CENTRAIS*************/
+.t14one {
+
+    /*background-color: #cccccc;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t14two {
+
+    /*background-color: #FFFFFF;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+/*************OPÇÕES DE MENU*************/
+.t14one button {
+
+    border:none;
+    background: url("../imagens/btSimVoto.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t14two button {
+
+    border:none;
+    background: url("../imagens/btNaoVoto.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/*************RODAPE*************/
+
+.t14rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t14-rodape-wrapper {
+
+    width: 70%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.t14-rodape-wrapper button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/***************FINAL TELA 14 (DESISTIR TORNEIO)*****************/
+
+
+/***************************************TELA 15 (AGUARDE O MASTER CONFIGURAR O JOGO)***********************************************/
+
+#idioma-title-1 {
+
+    display: block;/*****ATIVA OU DESATIVA MENSAGEM*****/
+
+}
+
+#modo-title-1 {
+
+    display: none;/*****ATIVA OU DESATIVA MENSAGEM*****/
+
+}
+
+#cenario-title-1 {
+
+    display: none;/*****ATIVA OU DESATIVA MENSAGEM*****/
+
+}
+
+.t15corpo {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.t15one {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t15one button {
+
+    border:none;
+    background: url("../imagens/aguardando.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+.t15rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t15rodape-btn2 {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t15rodape-btn2 button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+/***************FINAL TELA 15 (AGUARDE O MASTER CONFIGURAR O JOGO)*****************/
+
+
+/***************************************TELA 16 (EXCEÇÕES DE CONEXAO)***********************************************/
+
+.t16corpo {
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.t16one {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t16one button {
+
+    border:none;
+    background: url("../imagens/haha.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+.t16rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t16rodape-btn2 {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t16rodape-btn2 button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+/***************FINAL TELA 16 (EXCEÇÕES DE CONEXAO)*****************/
+
+
+/***************************************TELA 17 (FINAL DO TORNEIO)***********************************************/
+
+.t17corpo {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+
+/*********DIVs CENTRAIS*********/
+.t17one {
+
+    /*background-color: #cccccc;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t17two {
+
+    /*background-color: #FFFFFF;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+/*********OPÇÕES DE MENU*********/
+.t17one button {
+
+    border:none;
+    background: url("../imagens/btReiniciar.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t17two button {
+
+    border:none;
+    background: url("../imagens/btMenu.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/*********RODAPE*********/
+
+.t17rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t17-rodape-wrapper {
+
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.t17-rodape-wrapper button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+/***************FINAL TELA 17 (FINAL DO TORNEIO)*****************/
+
+
+/***************************************TELA 18 (DESCONEXAO EM PARTIDA)***********************************************/
+
+
+.t18corpo {
+
+    background-color: RGBA(134,134,255,1);
+    width: 100%;
+    height: 50%;
+    display: flex;
+
+}
+
+/*******DIVs CENTRAIS*******/
+.t18one {
+
+    /*background-color: #cccccc;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.t18two {
+
+    /*background-color: #FFFFFF;*/
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+/*******OPÇÕES DE MENU*******/
+.t18one button {
+
+    border:none;
+    background: url("../imagens/btReiniciar.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.t18two button {
+
+    border:none;
+    background: url("../imagens/btMenu.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+/*******RODAPE*******/
+
+.t18rodape {
+
+    background-color: #fff9c4;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.t18-rodape-wrapper {
+
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.t18-rodape-wrapper button {
+
+    border: none;
+    background: url("../imagens/crabController.gif") no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+
+@media (min-width: 750px) {
+
+    .t6three-left span {
+
+        font-size: 1em;
+
+    }
+
+    .t6four-left span {
+
+        font-size: 1em;
+
+    }
+
+    .t6five-left span {
+
+        font-size: 1em;
+
+    }
+
+    .t6six-left span {
+
+        font-size: 1em;
+
+    }
+
+}
+
+@media (min-width: 900px) {
+
+    .topo span {
+
+        font-size: 1.5em;
+
+    }
+
+    .t5one span {
+
+        font-size: 1.3em;
+
+    }
+
+    .t5two span {
+
+        font-size: 1.3em;
+
+    }
+
+    .t5three span {
+
+        font-size: 1.3em;
+
+    }
+
+    .t5four span {
+
+        font-size: 1.3em;
+
+    }
+
+    .t6three-left span {
+
+        font-size: 1.185em;
+
+    }
+
+    .t6four-left span {
+
+        font-size: 1.185em;
+
+    }
+
+    .t6five-left span {
+
+        font-size: 1.185em;
+
+    }
+
+    .t6six-left span {
+
+        font-size: 1.185em;
+
+    }
+
+    .t7one span {
+
+        font-size: 1.3em;
+
+    }
+
+    .t7two span {
+
+        font-size: 1.3em;
+
+    }
+
+    .t7three span {
+
+        font-size: 1.3em;
+
+    }
+
+    .t7four span {
+
+        font-size: 1.3em;
+
+    }
+
+    .t7p1 {
+
+        width: 128px;
+        height: 128px;
+
+    }
+
+    .t7p2 {
+
+        width: 128px;
+        height: 128px;
+
+    }
+
+    .t7p3 {
+
+        width: 128px;
+        height: 128px;
+
+    }
+
+
+    .t7p4 {
+
+        width: 128px;
+        height: 128px;
+
+    }
+
+    .t8corpo span {
+
+        font-size: 1em;
+
+    }
+
+}
+
+@media (min-width: 1500px) {
+
+    .topo span {
+
+        font-size: 2em;
+
+    }
+
+    .t5one span {
+
+        font-size: 1.8em;
+
+    }
+
+    .t5two span {
+
+        font-size: 1.8em;
+
+    }
+
+    .t5three span {
+
+        font-size: 1.8em;
+
+    }
+
+    .t5four span {
+
+        font-size: 1.8em;
+
+    }
+
+    .t6three-left span {
+
+        font-size: 1.6em;
+
+    }
+
+    .t6four-left span {
+
+        font-size: 1.6em;
+
+    }
+
+    .t6five-left span {
+
+        font-size: 1.6em;
+
+    }
+
+    .t6six-left span {
+
+        font-size: 1.6em;
+
+    }
+
+    .t7one span {
+
+        font-size: 1.8em;
+
+    }
+
+    .t7two span {
+
+        font-size: 1.8em;
+
+    }
+
+    .t7three span {
+
+        font-size: 1.8em;
+
+    }
+
+    .t7four span {
+
+        font-size: 1.8em;
+
+    }
+
+    .t8corpo span {
+
+        font-size: 1.5em;
+
+    }
+
+}

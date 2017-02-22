@@ -1,0 +1,238 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T2::Idioma</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+
+</head>
+
+<style>
+
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .875em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ede7f6;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+
+    }
+
+    .w1corpo {
+
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .w1one {
+
+        background-color: RGBA(134,134,255,1);
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .w1one button {
+
+        border:none;
+        background: url("../imagens/btLinguaIngA.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .w1two {
+
+        background-color: RGBA(134,134,255,1);
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .w1two button {
+
+        border: none;
+        background: url("../imagens/btLinguaPorA.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .w1rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .w1rodape-wrapper {
+
+        width: 50%;
+        height: 100%;
+        display: flex;
+
+    }
+
+    .rodape-btn1 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .rodape-btn2 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .rodape-btn3 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .rodape-btn1 button {
+
+        border: none;
+        background: url("../imagens/btNao.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .rodape-btn2 button {
+
+        border: none;
+        background: url("../imagens/caranguejo.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 40%;
+        height: 40%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .rodape-btn3 button {
+
+        border: none;
+        background: url("../imagens/btSim.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+    }
+
+</style>
+<!--TELA 01 (ESCOLHA DO CONTROLE MASTER)-->
+<div id="t2" class="view">
+    <!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="#"></span>
+        </div>
+    </div>
+    <!--#############--CORPO--#############-->
+    <div class="w1corpo">
+        <div class="w1one">
+            <button id="btnUS"></button>
+        </div>
+        <div class="w1two">
+            <button id="btnPT"></button>
+        </div>
+    </div>
+    <!--#############--RODAPE--#############-->
+    <div class="w1rodape">
+        <div class="w1rodape-wrapper">
+            <div class="rodape-btn1">
+                <button id="btn-voltar"></button>
+            </div>
+            <div class="rodape-btn2">
+                <button id="#"></button>
+            </div>
+            <div class="rodape-btn3">
+                <button id="btn-avancar"></button>
+            </div>
+        </div>
+    </div>
+
+</div>

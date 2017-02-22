@@ -1,0 +1,192 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T13::TORNEIO</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+
+</head>
+
+<style>
+
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .875em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ede7f6;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+
+    }
+
+    #t13-msg-aguarde {
+
+        display: block;/*****ATIVA OU DESATIVA MENSAGEM*****/
+
+    }
+
+    #t13-msg-inativo {
+
+        display: none;/*****ATIVA OU DESATIVA MENSAGEM*****/
+
+    }
+
+    .t13corpo {
+
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .t13one-master {
+
+        background-color: RGBA(134,134,255,1);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        display: block; /*****ATIVA OU DESATIVA DIV*****/
+
+    }
+
+    .t13one-master button {
+
+        border:none;
+        background: url("../imagens/btContinuar.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t13two-slave {
+
+        background-color: RGBA(134,134,255,1);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        display: none; /*****ATIVA OU DESATIVA DIV*****/
+
+    }
+
+    .t13two-slave button {
+
+        border:none;
+        background: url("../imagens/imgParado.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t13rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t13rodape-btn2 {
+
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t13rodape-btn2 button {
+
+        border: none;
+        background: url("../imagens/crabController.gif") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+    }
+
+</style>
+<!--TELA 13 (PLAY TORNEIO / AGUARDE CONTROLE ATIVO)-->
+<div id="13" class="view">
+    <!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="t13-msg-aguarde">(Player name) é o dono da bola!<br>Aguarde ele dar o play</span>
+            <span id="t13-msg-inativo">Outro Jogo está rolando<br>Aproveite para estudar os adeversários</span>
+        </div>
+    </div>
+    <!--#############--CORPO--#############-->
+    <div class="t13corpo">
+        <div class="t13one-master">
+            <button id="t13-btn-ok"></button>
+        </div>
+        <div class="t13two-slave">
+            <button id="#"></button>
+        </div>
+    </div>
+    <!--#############--RODAPE--#############-->
+    <div class="t13rodape">
+        <div class="t13rodape-btn2">
+            <button id="#"></button>
+        </div>
+    </div>
+</div>

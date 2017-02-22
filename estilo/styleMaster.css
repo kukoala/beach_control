@@ -1,0 +1,540 @@
+﻿	/***********************************************************************************************************************************************/
+/* Configuração do navegador                                                                                                                   */
+/***********************************************************************************************************************************************/
+@import url('reset.css');
+
+
+/***********************************************************************************************************************************************/
+/* CSS Documento                                                                                                                               */
+/***********************************************************************************************************************************************/
+html{overflow:hidden;}
+canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
+body{background:#000;}
+.view {display:none;}
+
+span{text-shadow:1px 1px 5px rgba(0,0,0,1); font-weight:bold; color:#FFFFFF; letter-spacing:0pt; word-spacing:5pt; font-size:230%; text-align:center;
+font-family:impact, sans-serif; line-height:1;}
+#content{background:#000; width:95%; height:100%; margin:0 auto; overflow:hidden;}
+
+
+/***********************************************************************************************************************************************/
+/*Estilização dos controles                                                                                                                    */
+/***********************************************************************************************************************************************/
+/*                                                              Controle1                                                                      */
+/***********************************************************************************************************************************************/
+
+/**Tela 00**/
+#controle1Tela0 {margin:0 auto; background:url("../imagens/logoKukoalaSplash.png") RGBA(255,255,255,1) no-repeat center center; background-size:25%; width:100%; height:100%;}
+
+/**Tela 01**/
+#controle1Tela1 {margin:0 auto; background:url("../imagens/logoJogoSplash.png") RGBA(134,134,255,1) no-repeat center center; background-size:35%; width:100%; height:100%;}
+
+/**Tela 02**/
+#controle1Tela2 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela2Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela2Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela2MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle1Tela2MeioEsq button {border:none; background:none;}
+#controle1Tela2MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle1Tela2MeioDir button {border:none; background:none;}
+#controle1Tela2Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle1Tela2Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 03**/
+#controle1Tela3 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela3Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela3Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela3MeioEsq {background:RGBA(0,0,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle1Tela3MeioEsq button {border:none; background:none;}
+#controle1Tela3MeioDir {background:RGBA(255,0,0,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle1Tela3MeioDir button {border:none; background:none;}
+#controle1Tela3Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle1Tela3Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 04**/
+#controle1Tela4 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela4Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela4Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela4MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle1Tela4MeioEsq button {border:none; background:none;}
+#controle1Tela4MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle1Tela4MeioDir button {border:none; background:none;}
+#controle1Tela4Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 05**/
+#controle1Tela5 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela5Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela5Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela5MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle1Tela5MeioEsq button {border:none; background:none;}
+#controle1Tela5MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle1Tela5MeioDir button {border:none; background:none;}
+#controle1Tela5Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle1Tela5Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 06**/
+#controle1Tela6 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela6Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela6Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela6MeioEsq {background:RGBA(134,134,255,1); width:20%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle1Tela6MeioCen {background:RGBA(134,134,255,1); width:60%; height:100%; float:left;  padding-top:5%; text-align:center;}
+#controle1Tela6MeioCen button {border:none; background:none;}
+#controle1Tela6MeioDir {background:RGBA(134,134,255,1); width:20%; height:100%; float:left; padding-top:5%; text-align:center;}
+#controle1Tela6MeioDir button {border:none; background:none;}
+#controle1Tela6Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle1Tela6Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 07**/
+#controle1Tela7 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela7Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela7Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela7MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle1Tela7MeioEsq button {border:none; background:none;}
+#controle1Tela7MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; padding-top:5%; text-align:Right;}
+#controle1Tela7MeioDir ul li {padding:1% 10% 1% 0%;}
+#controle1Tela7MeioDir ul li span{padding-right:5%; text-align:left;}
+#controle1Tela7Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle1Tela7Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 08**/
+#controle1Tela8 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela8Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela8Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela8MeioEsqA{background:RGBA(0,0,255,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle1Tela8MeioEsqB{background:RGBA(0,0,255,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle1Tela8MeioDirA {background:RGBA(255,0,0,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle1Tela8MeioDirB {background:RGBA(255,0,0,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle1Tela8Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle1Tela8Baixo button {border:none; background:none; padding:1%;}
+#controle1Tela8MeioEsqAFoto img{border: 5px solid #000; padding:1%; background:RGBA(0,0,0,0.5);}	
+
+/**Tela 09**/
+#controle1Tela9 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela9Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela9Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela9MeioEsq {background:RGBA(134,134,255,1); width:35%; height:100%; float:left; text-align:center;}
+#controle1Tela9MeioCen {background:RGBA(134,134,255,1); width:30%; height:100%; float:left; text-align:center;}
+#controle1Tela9MeioDir {background:RGBA(134,134,255,1); width:35%; height:100%; float:left; text-align:center;}
+#controle1Tela9MeioDir button {border:none; background:none;}
+#controle1Tela9Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle1Tela9Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 10**/
+#controle1Tela10 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela10Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela10Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela10Meio img{padding-top:5%;}
+#controle1Tela10Meio button {border:none; background:none;}
+#controle1Tela10MeioEsq {background:RGBA(67,67,127,1); width:35%; height:100%; float:left; text-align:center;}
+#controle1Tela10MeioCen {background:RGBA(67,67,127,1); width:30%; height:100%; float:left; text-align:center;}
+#controle1Tela10MeioDir {background:RGBA(67,67,127,1); width:35%; height:100%; float:left; text-align:center;}
+#controle1Tela10Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 11**/
+#controle1Tela11 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela11Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela11Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden;}
+#controle1Tela11Meio img{padding-top:5%;}
+#controle1Tela11Meio button {border:none; background:none;}
+#controle1Tela11MeioEsq {background:RGBA(67,67,127,1); width:50%; height:100%; float:left; text-align:center;}
+#controle1Tela11MeioDir {background:RGBA(67,67,127,1); width:50%; height:100%; float:left; text-align:center;}
+#controle1Tela11Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 12**/
+#controle1Tela12 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle1Tela12Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle1Tela12Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden; text-align:center; }
+#controle1Tela12Meio img{padding-top:5%;}
+#controle1Tela12Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/***********************************************************************************************************************************************/
+/*                                                              Controle2                                                                      */
+/***********************************************************************************************************************************************/
+
+/**Tela 00**/
+#controle2Tela0 {margin:0 auto; background:url("../imagens/logoKukoalaSplash.png") RGBA(255,255,255,1) no-repeat center center; background-size:25%; width:100%; height:100%;}
+
+/**Tela 01**/
+#controle2Tela1 {margin:0 auto; background:url("../imagens/logoJogoSplash.png") RGBA(134,134,255,1) no-repeat center center; background-size:35%; width:100%; height:100%;}
+
+/**Tela 02**/
+#controle2Tela2 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela2Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela2Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela2MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle2Tela2MeioEsq button {border:none; background:none;}
+#controle2Tela2MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle2Tela2MeioDir button {border:none; background:none;}
+#controle2Tela2Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle2Tela2Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 03**/
+#controle2Tela3 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela3Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela3Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela3MeioEsq {background:RGBA(0,0,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle2Tela3MeioEsq button {border:none; background:none;}
+#controle2Tela3MeioDir {background:RGBA(255,0,0,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle2Tela3MeioDir button {border:none; background:none;}
+#controle2Tela3Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle2Tela3Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 04**/
+#controle2Tela4 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela4Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela4Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela4MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle2Tela4MeioEsq button {border:none; background:none;}
+#controle2Tela4MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle2Tela4MeioDir button {border:none; background:none;}
+#controle2Tela4Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 05**/
+#controle2Tela5 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela5Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela5Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela5MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle2Tela5MeioEsq button {border:none; background:none;}
+#controle2Tela5MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle2Tela5MeioDir button {border:none; background:none;}
+#controle2Tela5Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle2Tela5Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 06**/
+#controle2Tela6 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela6Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela6Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela6MeioEsq {background:RGBA(134,134,255,1); width:20%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle2Tela6MeioCen {background:RGBA(134,134,255,1); width:60%; height:100%; float:left;  padding-top:5%; text-align:center;}
+#controle2Tela6MeioCen button {border:none; background:none;}
+#controle2Tela6MeioDir {background:RGBA(134,134,255,1); width:20%; height:100%; float:left; padding-top:5%; text-align:center;}
+#controle2Tela6MeioDir button {border:none; background:none;}
+#controle2Tela6Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle2Tela6Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 07**/
+#controle2Tela7 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela7Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela7Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela7MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle2Tela7MeioEsq button {border:none; background:none;}
+#controle2Tela7MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; padding-top:5%; text-align:Right;}
+#controle2Tela7MeioDir ul li {padding:1% 10% 1% 0%;}
+#controle2Tela7MeioDir ul li span{padding-right:5%; text-align:left;}
+#controle2Tela7Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle2Tela7Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 08**/
+#controle2Tela8 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela8Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela8Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela8MeioEsqA{background:RGBA(0,0,255,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle2Tela8MeioEsqB{background:RGBA(0,0,255,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle2Tela8MeioDirA {background:RGBA(255,0,0,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle2Tela8MeioDirB {background:RGBA(255,0,0,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle2Tela8Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle2Tela8Baixo button {border:none; background:none; padding:1%;}
+#controle2Tela8MeioEsqAFoto img{border: 5px solid #000; padding:1%; background:RGBA(0,0,0,0.5);}	
+
+/**Tela 09**/
+#controle2Tela9 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela9Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela9Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela9MeioEsq {background:RGBA(134,134,255,1); width:35%; height:100%; float:left; text-align:center;}
+#controle2Tela9MeioCen {background:RGBA(134,134,255,1); width:30%; height:100%; float:left; text-align:center;}
+#controle2Tela9MeioDir {background:RGBA(134,134,255,1); width:35%; height:100%; float:left; text-align:center;}
+#controle2Tela9MeioDir button {border:none; background:none;}
+#controle2Tela9Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle2Tela9Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 10**/
+#controle2Tela10 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela10Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela10Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela10Meio img{padding-top:5%;}
+#controle2Tela10Meio button {border:none; background:none;}
+#controle2Tela10MeioEsq {background:RGBA(67,67,127,1); width:35%; height:100%; float:left; text-align:center;}
+#controle2Tela10MeioCen {background:RGBA(67,67,127,1); width:30%; height:100%; float:left; text-align:center;}
+#controle2Tela10MeioDir {background:RGBA(67,67,127,1); width:35%; height:100%; float:left; text-align:center;}
+#controle2Tela10Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 11**/
+#controle2Tela11 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela11Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela11Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden;}
+#controle2Tela11Meio img{padding-top:5%;}
+#controle2Tela11Meio button {border:none; background:none;}
+#controle2Tela11MeioEsq {background:RGBA(67,67,127,1); width:50%; height:100%; float:left; text-align:center;}
+#controle2Tela11MeioDir {background:RGBA(67,67,127,1); width:50%; height:100%; float:left; text-align:center;}
+#controle2Tela11Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 12**/
+#controle2Tela12 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle2Tela12Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle2Tela12Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden; text-align:center; }
+#controle2Tela12Meio img{padding-top:5%;}
+#controle2Tela12Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/***********************************************************************************************************************************************/
+/*                                                              Controle3                                                                      */
+/***********************************************************************************************************************************************/
+
+/**Tela 00**/
+#controle3Tela0 {margin:0 auto; background:url("../imagens/logoKukoalaSplash.png") RGBA(255,255,255,1) no-repeat center center; background-size:25%; width:100%; height:100%;}
+
+/**Tela 01**/
+#controle3Tela1 {margin:0 auto; background:url("../imagens/logoJogoSplash.png") RGBA(134,134,255,1) no-repeat center center; background-size:35%; width:100%; height:100%;}
+
+/**Tela 02**/
+#controle3Tela2 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela2Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela2Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela2MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle3Tela2MeioEsq button {border:none; background:none;}
+#controle3Tela2MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle3Tela2MeioDir button {border:none; background:none;}
+#controle3Tela2Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle3Tela2Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 03**/
+#controle3Tela3 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela3Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela3Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela3MeioEsq {background:RGBA(0,0,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle3Tela3MeioEsq button {border:none; background:none;}
+#controle3Tela3MeioDir {background:RGBA(255,0,0,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle3Tela3MeioDir button {border:none; background:none;}
+#controle3Tela3Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle3Tela3Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 04**/
+#controle3Tela4 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela4Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela4Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela4MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle3Tela4MeioEsq button {border:none; background:none;}
+#controle3Tela4MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle3Tela4MeioDir button {border:none; background:none;}
+#controle3Tela4Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 05**/
+#controle3Tela5 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela5Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela5Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela5MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle3Tela5MeioEsq button {border:none; background:none;}
+#controle3Tela5MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle3Tela5MeioDir button {border:none; background:none;}
+#controle3Tela5Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle3Tela5Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 06**/
+#controle3Tela6 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela6Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela6Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela6MeioEsq {background:RGBA(134,134,255,1); width:20%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle3Tela6MeioCen {background:RGBA(134,134,255,1); width:60%; height:100%; float:left;  padding-top:5%; text-align:center;}
+#controle3Tela6MeioCen button {border:none; background:none;}
+#controle3Tela6MeioDir {background:RGBA(134,134,255,1); width:20%; height:100%; float:left; padding-top:5%; text-align:center;}
+#controle3Tela6MeioDir button {border:none; background:none;}
+#controle3Tela6Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle3Tela6Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 07**/
+#controle3Tela7 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela7Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela7Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela7MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle3Tela7MeioEsq button {border:none; background:none;}
+#controle3Tela7MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; padding-top:5%; text-align:Right;}
+#controle3Tela7MeioDir ul li {padding:1% 10% 1% 0%;}
+#controle3Tela7MeioDir ul li span{padding-right:5%; text-align:left;}
+#controle3Tela7Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle3Tela7Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 08**/
+#controle3Tela8 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela8Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela8Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela8MeioEsqA{background:RGBA(0,0,255,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle3Tela8MeioEsqB{background:RGBA(0,0,255,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle3Tela8MeioDirA {background:RGBA(255,0,0,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle3Tela8MeioDirB {background:RGBA(255,0,0,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle3Tela8Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle3Tela8Baixo button {border:none; background:none; padding:1%;}
+#controle3Tela8MeioEsqAFoto img{border: 5px solid #000; padding:1%; background:RGBA(0,0,0,0.5);}	
+
+/**Tela 09**/
+#controle3Tela9 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela9Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela9Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela9MeioEsq {background:RGBA(134,134,255,1); width:35%; height:100%; float:left; text-align:center;}
+#controle3Tela9MeioCen {background:RGBA(134,134,255,1); width:30%; height:100%; float:left; text-align:center;}
+#controle3Tela9MeioDir {background:RGBA(134,134,255,1); width:35%; height:100%; float:left; text-align:center;}
+#controle3Tela9MeioDir button {border:none; background:none;}
+#controle3Tela9Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle3Tela9Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 10**/
+#controle3Tela10 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela10Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela10Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela10Meio img{padding-top:5%;}
+#controle3Tela10Meio button {border:none; background:none;}
+#controle3Tela10MeioEsq {background:RGBA(67,67,127,1); width:35%; height:100%; float:left; text-align:center;}
+#controle3Tela10MeioCen {background:RGBA(67,67,127,1); width:30%; height:100%; float:left; text-align:center;}
+#controle3Tela10MeioDir {background:RGBA(67,67,127,1); width:35%; height:100%; float:left; text-align:center;}
+#controle3Tela10Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 11**/
+#controle3Tela11 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela11Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela11Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden;}
+#controle3Tela11Meio img{padding-top:5%;}
+#controle3Tela11Meio button {border:none; background:none;}
+#controle3Tela11MeioEsq {background:RGBA(67,67,127,1); width:50%; height:100%; float:left; text-align:center;}
+#controle3Tela11MeioDir {background:RGBA(67,67,127,1); width:50%; height:100%; float:left; text-align:center;}
+#controle3Tela11Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 12**/
+#controle3Tela12 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle3Tela12Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle3Tela12Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden; text-align:center; }
+#controle3Tela12Meio img{padding-top:5%;}
+#controle3Tela12Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/***********************************************************************************************************************************************/
+/*                                                              Controle4                                                                      */
+/***********************************************************************************************************************************************/
+
+/**Tela 00**/
+#controle4Tela0 {margin:0 auto; background:url("../imagens/logoKukoalaSplash.png") RGBA(255,255,255,1) no-repeat center center; background-size:25%; width:100%; height:100%;}
+
+/**Tela 01**/
+#controle4Tela1 {margin:0 auto; background:url("../imagens/logoJogoSplash.png") RGBA(134,134,255,1) no-repeat center center; background-size:35%; width:100%; height:100%;}
+
+/**Tela 02**/
+#controle4Tela2 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela2Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela2Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela2MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle4Tela2MeioEsq button {border:none; background:none;}
+#controle4Tela2MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle4Tela2MeioDir button {border:none; background:none;}
+#controle4Tela2Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle4Tela2Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 03**/
+#controle4Tela3 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela3Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela3Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela3MeioEsq {background:RGBA(0,0,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle4Tela3MeioEsq button {border:none; background:none;}
+#controle4Tela3MeioDir {background:RGBA(255,0,0,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle4Tela3MeioDir button {border:none; background:none;}
+#controle4Tela3Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle4Tela3Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 04**/
+#controle4Tela4 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela4Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela4Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela4MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle4Tela4MeioEsq button {border:none; background:none;}
+#controle4Tela4MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle4Tela4MeioDir button {border:none; background:none;}
+#controle4Tela4Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 05**/
+#controle4Tela5 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela5Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela5Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela5MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle4Tela5MeioEsq button {border:none; background:none;}
+#controle4Tela5MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; text-align:Left; padding-top:5%;}
+#controle4Tela5MeioDir button {border:none; background:none;}
+#controle4Tela5Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle4Tela5Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 06**/
+#controle4Tela6 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela6Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela6Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela6MeioEsq {background:RGBA(134,134,255,1); width:20%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle4Tela6MeioCen {background:RGBA(134,134,255,1); width:60%; height:100%; float:left;  padding-top:5%; text-align:center;}
+#controle4Tela6MeioCen button {border:none; background:none;}
+#controle4Tela6MeioDir {background:RGBA(134,134,255,1); width:20%; height:100%; float:left; padding-top:5%; text-align:center;}
+#controle4Tela6MeioDir button {border:none; background:none;}
+#controle4Tela6Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle4Tela6Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 07**/
+#controle4Tela7 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela7Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela7Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela7MeioEsq {background:RGBA(134,134,255,1); width:50%; height:100%; float:left; text-align:Right; padding-top:5%;}
+#controle4Tela7MeioEsq button {border:none; background:none;}
+#controle4Tela7MeioDir {background:RGBA(134,134,255,1); width:50%; height:100%; float:Right; padding-top:5%; text-align:Right;}
+#controle4Tela7MeioDir ul li {padding:1% 10% 1% 0%;}
+#controle4Tela7MeioDir ul li span{padding-right:5%; text-align:left;}
+#controle4Tela7Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle4Tela7Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 08**/
+#controle4Tela8 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela8Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela8Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela8MeioEsqA{background:RGBA(0,0,255,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle4Tela8MeioEsqB{background:RGBA(0,0,255,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle4Tela8MeioDirA {background:RGBA(255,0,0,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle4Tela8MeioDirB {background:RGBA(255,0,0,0.9); width:25%; height:100%; float:left; text-align:Center; padding-top:5%;}
+#controle4Tela8Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle4Tela8Baixo button {border:none; background:none; padding:1%;}
+#controle4Tela8MeioEsqAFoto img{border: 5px solid #000; padding:1%; background:RGBA(0,0,0,0.5);}	
+
+/**Tela 09**/
+#controle4Tela9 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela9Cima {margin:0 auto; background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center; background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela9Meio {margin:0 auto; background:RGBA(134,134,255,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela9MeioEsq {background:RGBA(134,134,255,1); width:35%; height:100%; float:left; text-align:center;}
+#controle4Tela9MeioCen {background:RGBA(134,134,255,1); width:30%; height:100%; float:left; text-align:center;}
+#controle4Tela9MeioDir {background:RGBA(134,134,255,1); width:35%; height:100%; float:left; text-align:center;}
+#controle4Tela9MeioDir button {border:none; background:none;}
+#controle4Tela9Baixo {background:url("../imagens/marcaDagua.png") RGBA(247,221,154,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+#controle4Tela9Baixo button {border:none; background:none; padding:1%;}	
+
+/**Tela 10**/
+#controle4Tela10 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela10Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela10Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela10Meio img{padding-top:5%;}
+#controle4Tela10Meio button {border:none; background:none;}
+#controle4Tela10MeioEsq {background:RGBA(67,67,127,1); width:35%; height:100%; float:left; text-align:center;}
+#controle4Tela10MeioCen {background:RGBA(67,67,127,1); width:30%; height:100%; float:left; text-align:center;}
+#controle4Tela10MeioDir {background:RGBA(67,67,127,1); width:35%; height:100%; float:left; text-align:center;}
+#controle4Tela10Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 11**/
+#controle4Tela11 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela11Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela11Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden;}
+#controle4Tela11Meio img{padding-top:5%;}
+#controle4Tela11Meio button {border:none; background:none;}
+#controle4Tela11MeioEsq {background:RGBA(67,67,127,1); width:50%; height:100%; float:left; text-align:center;}
+#controle4Tela11MeioDir {background:RGBA(67,67,127,1); width:50%; height:100%; float:left; text-align:center;}
+#controle4Tela11Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+/**Tela 12**/
+#controle4Tela12 {background:RGBA(255,255,255,1); width:100%; height:100%;}
+#controle4Tela12Cima {background:RGBA(67,67,127,1); background-size:15%; width:100%; height:30%; text-align:center;}
+#controle4Tela12Meio {background:RGBA(67,67,127,1); width:100%; height:50%; overflow:hidden; text-align:center; }
+#controle4Tela12Meio img{padding-top:5%;}
+#controle4Tela12Baixo {background:url("../imagens/marcaDagua.png") RGBA(123,110,77,1) no-repeat right center; background-size:10%; width:100%; height:20%; text-align:center; overflow:hidden;}
+
+
+
+
+
+
+
+

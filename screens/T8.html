@@ -1,0 +1,239 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T8::CONTROLE JOGO</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+</head>
+
+
+<style>
+/****************************TOPO****************************/
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .875em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ede7f6;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+
+    }
+
+/*************CORPO*************/
+    .t8corpo {
+
+        background-color: RGBA(134,134,255,1);
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+/*************DIVs CENTRAIS*************/
+    .t8one {
+
+        /*background-color: #cccccc;*/
+        width: 33.333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .t8two {
+
+        /*background-color: cadetblue;*/
+        width: 33.333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .t8three {
+
+        /*background-color: #FFFFFF;*/
+        width: 33.333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+/*************GIFS PARA GUIA E SPAN*************/
+    .t8one button {
+
+        border:none;
+        background: url("../imagens/acelL.gif") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t8two button {
+
+        border:none;
+        background: url("../imagens/acelT.gif") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t8three button {
+
+        border:none;
+        background: url("../imagens/acelF.gif") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t8corpo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .8125em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ede7f6;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+        letter-spacing: .8pt;
+        color: #1a237e;
+
+    }
+
+/*************RODAPE*************/
+
+    .t8rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t8-pause {
+
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .t8-pause button {
+
+        border: none;
+        background: url("../imagens/btPare.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 70%;
+        height: 70%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+
+        .t8corpo span {
+
+            font-size: 1em;
+
+        }
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+
+        .t8corpo span {
+
+            font-size: 1.5em;
+
+        }
+    }
+
+</style>
+<!--TELA 08 (CONTROLE)-->
+
+<div id="8" class="view">
+
+<!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="control-title">Você está olhando para a tela errada</span>
+        </div>
+    </div>
+
+<!--#############--IMAGENS DE REFERENCIA--#############-->
+    <div class="t8corpo">
+        <div class="t8one"><button id="btn-movimento"></button><span id="movimento"> Movimentar</span></div>
+        <div class="t8two"><button id="btn-pulo"></button><span id="pulo">pulo</span></div>
+        <div class="t8three"><button id="btn-chute"></button><span id="chute">chute</span></div>
+    </div>
+
+<!--#############--RODAPE (PAUSE)--#############-->
+    <div class="t8rodape">
+        <div class="t8-pause">
+           <button id="t8-btn-pausa"></button>
+        </div>
+    </div>
+
+</div>

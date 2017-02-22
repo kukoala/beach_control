@@ -1,0 +1,413 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T4::CENÁRIO E BOLA</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+
+</head>
+
+
+<style>
+
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .875em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ede7f6;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+
+    }
+
+    .t4corpo {
+
+        background-color: RGBA(134,134,255,1);
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+    }
+
+    .t4left-wrapper {
+
+        width: 65%;
+        height: 100%;
+
+    }
+
+    .t4one {
+
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t4two {
+
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t4three {
+
+        width: 35%;
+        height: 100%;
+        background: url("../imagens/qtdGol.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+
+    }
+
+    .t4selection-wrapper {
+
+        width: 50%;
+        height: 100%;
+        display: flex;
+
+    }
+
+    .t4clima-btn1 {
+
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t4clima-btn2 {
+
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t4clima-btn3 {
+
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t4clima-btn1 button {
+
+        border: none;
+        background: url("../imagens/btEscolhaEsq.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+
+    .t4clima-btn2 button {
+
+        border: none;
+        background: url("../imagens/amostraCenario0.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t4clima-btn3 button {
+
+        border: none;
+        background: url("../imagens/btEscolhaDir.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t4bola-btn1 {
+
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t4bola-btn2 {
+
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t4bola-btn3 {
+
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t4bola-btn1 button {
+
+        border: none;
+        background: url("../imagens/btEscolhaEsq.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+
+    .t4bola-btn2 button {
+
+        border: none;
+        background: url("../imagens/amostraBola0.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t4bola-btn3 button {
+
+        border: none;
+        background: url("../imagens/btEscolhaDir.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t4rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    .t4selection-btn1 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t4selection-btn2 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t4selection-btn3 {
+
+        width: 33.3333333%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t4selection-btn1 button {
+
+        border: none;
+        background: url("../imagens/btNao.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t4selection-btn2 button {
+
+        border: none;
+        background: url("../imagens/caranguejo.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 40%;
+        height: 40%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t4selection-btn3 button {
+
+        border: none;
+        background: url("../imagens/btSim.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+    }
+
+</style>
+
+<!--TELA 04 (CENARIO E BOLA)-->
+<div id="4" class="view">
+
+<!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="cenario-title">Experimente bolas diferentes</span>
+        </div>
+    </div>
+
+<!--#############--SELEÇÃO DE CLIMA (CENÁRIO)--#############-->
+    <div class="t4corpo">
+
+        <div class="t4left-wrapper">
+
+            <div class="t4one">
+
+                <div class="t4selection-wrapper">
+
+                    <div class="t4clima-btn1">
+                        <button id="btncampo-ESQ"></button>
+                    </div>
+
+                    <div class="t4clima-btn2">
+                        <button id="btncampo"></button>
+                    </div>
+
+                    <div class="t4clima-btn3">
+                        <button id="btncampo-DIR"></button>
+                    </div>
+
+                </div>
+            </div>
+
+<!--#############--SELEÇÃO DE BOLA--#############-->
+            <div class="t4two">
+
+                <div class="t4selection-wrapper">
+
+                    <div class="t4bola-btn1">
+                        <button id="btnbola-ESQ"></button>
+                    </div>
+
+                    <div class="t4bola-btn2">
+                        <button id="btnbola"></button>
+                    </div>
+
+                    <div class="t4bola-btn3">
+                        <button id="btnbola-DIR"></button>
+                    </div>
+
+                </div>
+            </div>
+        </div><!--FECHA WRAPPER CORPO-->
+
+<!--#############--QUANTIDADE DE GOLS--#############-->
+        <div class="t4three"></div>
+    </div><!--FECHA CORPO-->
+
+
+<!--#############--RODAPÉ--#############-->
+    <div class="t4rodape">
+
+        <div class="t4selection-wrapper">
+
+            <div class="t4selection-btn1">
+                <button id="t4-btn-voltar"></button>
+            </div>
+
+            <div class="t4selection-btn2">
+                <button id="#"></button>
+            </div>
+
+            <div class="t4selection-btn3">
+                <button id="t4-btn-avancar"></button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

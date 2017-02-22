@@ -1,0 +1,1114 @@
+﻿<!--###############################################################-->
+<!--## SISTEMA DE CONTROLE EM HTML PARA O JOGO FUTEBOL DE AREIA  ##-->
+<!--## KUKOALA GAME STUDIO LTDA - ME                             ##-->
+<!--## VERSÃO: 1.0.7                                             ##-->
+<!--## DATA RELEASE INICIAL : 15/12/2016 - 08:30                 ##-->
+<!--## DATA RELEASE 1.0.3   : 16/12/2016 - 16:30                 ##-->
+<!--## DATA RELEASE 1.0.5   : 17/12/2016 - 10:50                 ##-->
+<!--## DATA RELEASE 1.0.7   : 19/12/2016 - 10:40                 ##-->
+<!--## DATA RELEASE 1.0.7   : 22/12/2016 - 11:00                 ##-->
+<!--## DATA RELEASE FINAL   :   /  /     -   :                   ##-->
+<!--###############################################################-->
+
+	<head>
+<!--############################################ CONFIGURAÇÕES ###########################################-->
+	<!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<link href="imagens/icon.png" rel="shortcut icon">
+	<title>Futebol de Areia</title>
+	
+	<!-- Fullscreen em iOS devices -->
+	<meta name="viewport" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<meta name="HandheldFriendly" content="true" />
+	
+	<!-- Chrome para Android tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+
+<!--######################################### ARQUIVOS EXTERNOS #########################################-->
+	<!-- Folha de estilo -->
+	<link rel="stylesheet" href="estilo/styleMaster.css" type="text/css" media="screen" />
+	
+	<!--Area para Scripts -->
+	<script src="scripts/script.js" charset="ISO-8859-1"></script>
+
+</head> 
+<!--####################################### AQUI COMEÇA A MAGICA ########################################--> 
+
+<body> 
+	<div id="content">
+	
+<!--############################### CONTROLE 1 ###############################-->
+<!--TELA 0-->			
+		<div id="controle1Tela0" class="view">
+
+		</div><!--controle1Tela0-->
+		
+<!--TELA 1-->			
+		<div id="controle1Tela1" class="view">
+
+		</div><!--controle1Tela1-->
+
+<!--TELA 2-->			
+		<div id="controle1Tela2" class="view">
+			<div id="controle1Tela2Cima" >
+				<span><br></span><br>
+				<span><br></span><br>		
+				<span>CHOOSE YOUR LANGUAGE!<br>ESCOLHA SEU IDIOMA!</span>
+				<span><br></span><br><span><br></span>				
+				<span id="idiomaEscolhido"></span>
+			</div>			
+			<div id="controle1Tela2Meio" >
+				<div id="controle1Tela2MeioEsq">
+					<button id="btLinguaIng"><img src="imagens/btLinguaIngA.png" height="60%"></button>
+				</div>
+				
+				<div id="controle1Tela2MeioDir">
+					<button id="btLinguaPor"><img src="imagens/btLinguaPorA.png" height="60%"></button>
+				</div>				
+			</div>
+			
+			<div id="controle1Tela2Baixo">
+				<button id="btNao"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle1Tela2-->
+
+<!--TELA 3-->	
+		<div id="controle1Tela3" class="view">
+			<div id="controle1Tela3Cima" >
+				<span><br></span><br>
+				<span><br></span><br>			
+				<span id="c1T3Escolha"></span>
+			</div>
+			
+			<div id="controle1Tela3Meio" >
+				<div id="controle1Tela3MeioEsq">
+					<button id="btPosicao1J1" disabled="disabled"><img src="imagens/btPosicao1A.png" height="60%"></button>
+					<button id="btPosicao3J1" disabled="disabled"><img src="imagens/btPosicao3A.png" height="60%"></button>
+				</div>
+				
+				<div id="controle1Tela3MeioDir">
+					<button id="btPosicao2J1" disabled="disabled"><img src="imagens/btPosicao2A.png" height="60%"></button>
+					<button id="btPosicao4J1" disabled="disabled"><img src="imagens/btPosicao4A.png" height="60%"></button>
+				</div>
+			</div>
+			
+			<div id="controle1Tela3Baixo">
+				<button id="btNao2"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim2"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle1Tela3-->
+
+<!--TELA 4-->			
+		<div id="controle1Tela4" class="view">
+			<div id="controle1Tela4Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c1T4Certo"></span>
+			</div>
+			
+			<div id="controle1Tela4Meio" >
+				<div id="controle1Tela4MeioEsq">
+					<button id="btSimVoto"><img src="imagens/btSimVoto.png" height="60%"></button>
+				</div>
+				
+				<div id="controle1Tela4MeioDir">
+					<button id="btNaoVoto"><img src="imagens/btNaoVoto.png" height="60%"></button>
+				</div>
+			</div>
+			
+			<div id="controle1Tela4Baixo">
+				<img src="imagens/caranguejo.png" height="50%">
+			</div>
+		</div><!--controle1Tela4-->		
+		
+
+<!--TELA 5-->			
+		
+<!--TELA 6-->			
+		<div id="controle1Tela6" class="view">
+			<div id="controle1Tela6Cima" >
+				<span><br></span><br>
+				<span><br></span><br>		
+				<span id="c1T6Configurar"></span>
+			</div>
+			
+			<div id="controle1Tela6Meio" >
+				<div id="controle1Tela6MeioEsq">
+				</div>
+				
+				<div id="controle1Tela6MeioCen">
+					<button id="cenaEsqJ1"><img src="imagens/btEscolhaEsq.png" height="35%"></button>
+					<img id="cenaImgJ1" src="imagens/amostraCenario0.png" height="35%">
+					<button id="cenaDirJ1"><img src="imagens/btEscolhaDir.png" height="35%"></button>
+					<br>
+					<button id="bolaEsqJ1"><img src="imagens/btEscolhaEsq.png" height="35%"></button>
+					<img id="bolaImgJ1" src="imagens/amostraBola0.png" height="35%">
+					<button id="bolaDirJ1"><img src="imagens/btEscolhaDir.png" height="35%"></button>				
+				</div>
+				
+				<div id="controle1Tela6MeioDir">
+					<img id="golsImg" src="imagens/qtdGol.png" height="80%">
+				</div>
+			</div>
+			
+			<div id="controle1Tela6Baixo">
+				<button id="btNao4"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim4"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle1Tela6-->	
+
+<!--TELA 7-->			
+		<div id="controle1Tela7" class="view">
+			<div id="controle1Tela7Cima">
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c1T7Escolha"></span>
+			</div>
+			
+			<div id="controle1Tela7Meio">
+				<div id="controle1Tela7MeioEsq">
+					<button id="btEscolhaEsqJ1"><img src="imagens/btEscolhaEsq.png" height="30%"></button>
+					<img id="corpoJog1" src="imagens/amostraCorpo.png" height="30%">
+					<button id="btEscolhaDirJ1"><img src="imagens/btEscolhaDir.png" height="30%"></button>
+					<br>
+					<button id="btEscolhaPeEsqJ1"><img src="imagens/btEscolhaEsq.png" height="30%"></button>
+					<img id="peJog1" src="imagens/amostraPe.png" height="30%">
+					<button id="btEscolhaPeDirJ1"><img src="imagens/btEscolhaDir.png" height="30%"></button>					
+				</div>
+				
+				<div id="controle1Tela7MeioDir">
+					<ul>
+						<li><span id="c1T7Velocidade"></span><img id="estVelJ1" src="imagens/refEstatistica3.png" height="5%"></li>
+						<li><span id="c1T7Precisao"></span><img id="estPreJ1" src="imagens/refEstatistica6.png" height="5%"></li>
+						<li><span id="c1T7Forca"></span><img id="estForJ1" src="imagens/refEstatistica5.png" height="5%"></li>
+						<li><span id="c1T7Pulo"></span><img id="estPulJ1" src="imagens/refEstatistica4.png" height="5%"></li>
+				</div>
+			</div>
+			
+			<div id="controle1Tela7Baixo">
+				<button id="btNao5"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim5"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle1Tela7-->	
+
+<!--TELA 8-->			
+		<div id="controle1Tela8" class="view">
+			<div id="controle1Tela8Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c1T8Aguarde"></span>
+			</div>
+			
+			<div id="controle1Tela8Meio" >
+				<div id="controle1Tela8MeioEsqA">
+					<span id="c1T8Jogador1">FULANO</span>
+					<div id="controle1Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkA.png"  width="25%">
+				</div>
+				<div id="controle1Tela8MeioEsqB">
+					<span id="c1T8Jogador2">FULANO</span>
+					<div id="controle1Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkA.png"  width="25%">
+				</div>
+				<div id="controle1Tela8MeioDirA">
+					<span id="c1T8Jogador3">FULANO</span>
+					<div id="controle1Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkB.png"  width="25%">				
+				</div>
+				<div id="controle1Tela8MeioDirB">
+					<span id="c1T8Jogador4">FULANO</span>
+					<div id="controle1Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkB.png"  width="25%">				
+				</div>
+			</div>
+			<div id="controle1Tela8Baixo">
+				<button id="btNao6"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim6"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle1Tela8-->	
+
+<!--TELA 9-->			
+		<div id="controle1Tela9" class="view">
+			<div id="controle1Tela9Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c1T9OlharJogo"></span>
+			</div>
+			
+			<div id="controle1Tela9Meio">
+				<div id="controle1Tela9MeioEsq">
+					<span id="c1T9Mover"></span><br>
+					<img src="imagens/refMovimento.png" height="85%">
+				</div>
+				
+				<div id="controle1Tela9MeioCen">
+					<span id="c1T9Chutar"></span><br>
+					<img src="imagens/refPulo.png" height="85%">
+				</div>
+				
+				<div id="controle1Tela9MeioDir">
+					<span id="c1T9Pular"></span><br>
+					<img src="imagens/refChute.png" height="85%">
+				</div>
+			</div>
+			
+			<div id="controle1Tela9Baixo">
+				<button id="btPare"><img src="imagens/btPare.png" height="80%"></button>
+			</div>
+		</div><!--controle1Tela9-->	
+
+<!--TELA 10-->			
+		<div id="controle1Tela10" class="view">
+			<div id="controle1Tela10Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c1T10JogoParada"></span>
+			</div>
+			
+			<div id="controle1Tela10Meio">
+				<div id="controle1Tela10MeioEsq">
+					<span id="c1T10Continuar"></span><br>
+					<button id="btContinuar"><img src="imagens/btContinuar.png" height="70%"></button>
+				</div>
+				
+				<div id="controle1Tela10MeioCen">
+					<span id="c1T10Reiniciar"></span><br>
+					<button id="btReiniciar"><img src="imagens/btReiniciar.png" height="70%"></button>
+				</div>
+				
+				<div id="controle1Tela10MeioDir">
+					<span id="c1T10Voltar"></span><br>
+					<button id="btMenu"><img src="imagens/btMenu.png" height="70%"></button>
+				</div>
+			</div>
+			
+			<div id="controle1Tela10Baixo">
+			</div>
+		</div><!--controle1Tela10-->
+
+<!--TELA 11-->			
+		<div id="controle1Tela11" class="view">
+			<div id="controle1Tela11Cima" >
+				<span><br></span><br>
+				<span><br></span><br>
+				<span id="c1T11Voltar"></span>
+			</div>
+			
+			<div id="controle1Tela11Meio">
+				<div id="controle1Tela11MeioEsq">
+					<button id="btSimVoto2"><img src="imagens/btSimVoto.png" height="70%"></button>
+				</div>
+				
+				<div id="controle1Tela11MeioDir">
+					<button id="btSimVoto2"><img src="imagens/btNaoVoto.png" height="70%"></button>
+				</div>
+			</div>
+			
+			<div id="controle1Tela11Baixo">
+			</div>
+		</div><!--controle1Tela11-->	
+
+<!--TELA 12-->			
+		<div id="controle1Tela12" class="view">
+			<div id="controle1Tela12Cima" >
+				<span><br></span><br>
+				<span><br></span><br>
+				<span id="c1T12JogoParado"></span>
+			</div>
+			
+			<div id="controle1Tela12Meio">
+					<img src="imagens/imgParado.png" height="70%">
+			</div>
+			
+			<div id="controle1Tela12Baixo">
+			</div>
+		</div><!--controle1Tela12-->			
+				
+<!--############################### CONTROLE 2 ###############################-->
+
+<!--TELA 3-->	
+		<div id="controle2Tela3" class="view">
+			<div id="controle2Tela3Cima" >
+				<span><br></span><br>
+				<span><br></span><br>			
+				<span id="c2T3Escolha">ESCOLHA SEU LADO!</span>
+			</div>
+			
+			<div id="controle2Tela3Meio" >
+				<div id="controle2Tela3MeioEsq">
+					<button id="btPosicao1" disabled="disabled"><img src="imagens/btPosicao1A.png" height="60%"></button>
+					<button id="btPosicao3J2"><img src="imagens/btPosicao3A.png" height="60%"></button>
+				</div>
+				
+				<div id="controle2Tela3MeioDir">
+					<button id="btPosicao2J2"><img src="imagens/btPosicao2A.png" height="60%"></button>
+					<button id="btPosicao4J2"><img src="imagens/btPosicao4A.png" height="60%"></button>
+				</div>
+			</div>
+			
+			<div id="controle2Tela3Baixo">
+				<img src="imagens/caranguejo.png" height="50%">
+			</div>
+		</div><!--controle2Tela3-->
+
+<!--TELA 4-->			
+		<div id="controle2Tela4" class="view">
+			<div id="controle2Tela4Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c2T4Certo">TUDO CERTO?</span>
+			</div>
+			
+			<div id="controle2Tela4Meio" >
+				<div id="controle2Tela4MeioEsq">
+					<button id="btSimVotoJ2"><img src="imagens/btSimVoto.png" height="60%"></button>
+				</div>
+				
+				<div id="controle2Tela4MeioDir">
+					<button id="btNaoVotoJ2"><img src="imagens/btNaoVoto.png" height="60%"></button>
+				</div>
+			</div>
+			
+			<div id="controle2Tela4Baixo">
+				<img src="imagens/caranguejo.png" height="50%">
+			</div>
+		</div><!--controle2Tela4-->		
+		
+
+<!--TELA 5-->			
+		
+<!--TELA 6-->			
+		<div id="controle2Tela6" class="view">
+			<div id="controle2Tela6Cima" >
+				<span><br></span><br>
+				<span><br></span><br>		
+				<span id="c2T6ConfigurarAG"></span>
+			</div>
+			
+			<div id="controle2Tela6Meio" >				
+			</div>
+			
+			<div id="controle2Tela6Baixo">
+				<button id="btNao4J2"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim4J2"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle2Tela6-->	
+
+<!--TELA 7-->			
+		<div id="controle2Tela7" class="view">
+			<div id="controle2Tela7Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c2T7Escolha">ESCOLHA SABIAMENTE!</span>
+			</div>
+			
+			<div id="controle2Tela7Meio">
+				<div id="controle2Tela7MeioEsq">
+					<button id="btEscolhaEsqJ2"><img src="imagens/btEscolhaEsq.png" height="30%"></button>
+					<img id="corpoJog2" src="imagens/amostraCorpo.png" height="30%">
+					<button id="btEscolhaDirJ2"><img src="imagens/btEscolhaDir.png" height="30%"></button>
+					<br>
+					<button id="btEscolhaPeEsqJ2"><img src="imagens/btEscolhaEsq.png" height="30%"></button>
+					<img id="peJog2" src="imagens/amostraPe.png" height="30%">
+					<button id="btEscolhaPeDirJ2"><img src="imagens/btEscolhaDir.png" height="30%"></button>					
+				</div>
+				
+				<div id="controle2Tela7MeioDir">
+					<ul>
+						<li><span id="c2T7Velocidade">VELOCIDADE: </span><img id="estVelJ2" src="imagens/refEstatistica3.png" height="5%"></li>
+						<li><span id="c2T7Precisao">PRECISÃO: </span><img id="estPreJ2" src="imagens/refEstatistica6.png" height="5%"></li>
+						<li><span id="c2T7Forca">FORÇA: </span><img id="estForJ2" src="imagens/refEstatistica5.png" height="5%"></li>
+						<li><span id="c2T7Pulo">PULO: </span><img id="estPulJ2" src="imagens/refEstatistica4.png" height="5%"></li>
+				</div>
+			</div>
+			
+			<div id="controle2Tela7Baixo">
+				<button id="btNao5J2"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim5J2"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle2Tela7-->	
+
+<!--TELA 8-->			
+		<div id="controle2Tela8" class="view">
+			<div id="controle2Tela8Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c2T8Aguarde">AGUARDE OS INDECISOS...</span>
+			</div>
+			
+			<div id="controle2Tela8Meio" >
+				<div id="controle2Tela8MeioEsqA">
+					<span id="c2T8Jogador1">FULANO</span>
+					<div id="controle2Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkA.png"  width="25%">
+				</div>
+				<div id="controle2Tela8MeioEsqB">
+					<span id="c2T8Jogador2">FULANO</span>
+					<div id="controle2Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkA.png"  width="25%">
+				</div>
+				<div id="controle2Tela8MeioDirA">
+					<span id="c2T8Jogador3">FULANO</span>
+					<div id="controle2Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkB.png"  width="25%">				
+				</div>
+				<div id="controle2Tela8MeioDirB">
+					<span id="c2T8Jogador4">FULANO</span>
+					<div id="controle2Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkB.png"  width="25%">				
+				</div>
+			</div>
+			<div id="controle2Tela8Baixo">
+				<button id="btNao6J2"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim6J2"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle2Tela8-->	
+
+<!--TELA 9-->			
+		<div id="controle2Tela9" class="view">
+			<div id="controle2Tela9Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c2T9OlharJogo">OLHE PARA A TELA DO JOGO!</span>
+			</div>
+			
+			<div id="controle2Tela9Meio">
+				<div id="controle2Tela9MeioEsq">
+					<span id="c2T9Mover">MOVER</span><br>
+					<img src="imagens/refMovimento.png" height="85%">
+				</div>
+				
+				<div id="controle2Tela9MeioCen">
+					<span id="c2T9Chutar">CHUTAR</span><br>
+					<img src="imagens/refPulo.png" height="85%">
+				</div>
+				
+				<div id="controle2Tela9MeioDir">
+					<span id="c2T9Pular">PULAR</span><br>
+					<img src="imagens/refChute.png" height="85%">
+				</div>
+			</div>
+			
+			<div id="controle2Tela9Baixo">
+				<button id="btPareJ2"><img src="imagens/btPare.png" height="80%"></button>
+			</div>
+		</div><!--controle2Tela9-->	
+
+<!--TELA 10-->			
+		<div id="controle2Tela10" class="view">
+			<div id="controle2Tela10Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c2T10JogoParada">JOGO PARADO!</span>
+			</div>
+			
+			<div id="controle2Tela10Meio">
+				<div id="controle2Tela10MeioEsq">
+					<span id="c2T10Continuar">CONTINUAR JOGO</span><br>
+					<button id="btContinuar"><img src="imagens/btContinuar.png" height="70%"></button>
+				</div>
+				
+				<div id="controle2Tela10MeioCen">
+					<span id="c2T10Reiniciar">REINICIAR PARTIDA</span><br>
+					<button id="btReiniciar"><img src="imagens/btReiniciar.png" height="70%"></button>
+				</div>
+				
+				<div id="controle2Tela10MeioDir">
+					<span id="c2T10Voltar">VOLTAR AO MENU</span><br>
+					<button id="btMenu"><img src="imagens/btMenu.png" height="70%"></button>
+				</div>
+			</div>
+			
+			<div id="controle2Tela10Baixo">
+			</div>
+		</div><!--controle2Tela10-->
+
+<!--TELA 11-->			
+		<div id="controle2Tela11" class="view">
+			<div id="controle2Tela11Cima" >
+				<span><br></span><br>
+				<span><br></span><br>
+				<span id="c2T11Voltar">VOLTAR AO MENU?</span>
+			</div>
+			
+			<div id="controle2Tela11Meio">
+				<div id="controle2Tela11MeioEsq">
+					<button id="btSimVoto2J2"><img src="imagens/btSimVoto.png" height="70%"></button>
+				</div>
+				
+				<div id="controle2Tela11MeioDir">
+					<button id="btSimVoto2J2"><img src="imagens/btNaoVoto.png" height="70%"></button>
+				</div>
+			</div>
+			
+			<div id="controle2Tela11Baixo">
+			</div>
+		</div><!--controle2Tela11-->	
+
+<!--TELA 12-->			
+		<div id="controle2Tela12" class="view">
+			<div id="controle2Tela12Cima" >
+				<span><br></span><br>
+				<span><br></span><br>
+				<span id="c2T12JogoParado">JOGO PARADO</span>
+			</div>
+			
+			<div id="controle2Tela12Meio">
+					<img src="imagens/imgParado.png" height="70%">
+			</div>
+			
+			<div id="controle2Tela12Baixo">
+			</div>
+		</div><!--controle2Tela12-->
+
+<!--############################### CONTROLE 3 ###############################-->
+
+<!--TELA 3-->	
+		<div id="controle3Tela3" class="view">
+			<div id="controle3Tela3Cima" >
+				<span><br></span><br>
+				<span><br></span><br>			
+				<span id="c3T3Escolha">ESCOLHA SEU LADO!</span>
+			</div>
+			
+			<div id="controle3Tela3Meio" >
+				<div id="controle3Tela3MeioEsq">
+					<button id="btPosicao1J3" disabled="disabled"><img src="imagens/btPosicao1A.png" height="60%"></button>
+					<button id="btPosicao3J3"><img src="imagens/btPosicao3A.png" height="60%"></button>
+				</div>
+				
+				<div id="controle3Tela3MeioDir">
+					<button id="btPosicao2J3"><img src="imagens/btPosicao2A.png" height="60%"></button>
+					<button id="btPosicao4J3"><img src="imagens/btPosicao4A.png" height="60%"></button>
+				</div>
+			</div>
+			
+			<div id="controle3Tela3Baixo">
+				<button id="btNao2J3"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim2J3"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle3Tela3-->
+
+<!--TELA 4-->			
+		<div id="controle3Tela4" class="view">
+			<div id="controle3Tela4Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c3T4Certo">TUDO CERTO?</span>
+			</div>
+			
+			<div id="controle3Tela4Meio" >
+				<div id="controle3Tela4MeioEsq">
+					<button id="btSimVotoJ3"><img src="imagens/btSimVoto.png" height="60%"></button>
+				</div>
+				
+				<div id="controle3Tela4MeioDir">
+					<button id="btNaoVotoJ3"><img src="imagens/btNaoVoto.png" height="60%"></button>
+				</div>
+			</div>
+			
+			<div id="controle3Tela4Baixo">
+				<img src="imagens/caranguejo.png" height="50%">
+			</div>
+		</div><!--controle3Tela4-->		
+		
+
+<!--TELA 5-->			
+		
+<!--TELA 6-->			
+		<div id="controle3Tela6" class="view">
+			<div id="controle3Tela6Cima" >
+				<span><br></span><br>
+				<span><br></span><br>		
+				<span id="c3T6Configurar">COMO QUER SEU JOGO HOJE?</span>
+			</div>
+			
+			<div id="controle3Tela6Meio" >
+				<div id="controle3Tela6MeioEsq">
+				</div>
+				
+				<div id="controle3Tela6MeioCen">						
+				</div>
+				
+				<div id="controle3Tela6MeioDir">
+					<img id="golsImg" src="imagens/qtdGol.png" height="80%">
+				</div>
+			</div>
+			
+			<div id="controle3Tela6Baixo">
+				<button id="btNao4J3"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim4J3"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle3Tela6-->	
+
+<!--TELA 7-->			
+		<div id="controle3Tela7" class="view">
+			<div id="controle3Tela7Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c3T7Escolha">ESCOLHA SABIAMENTE!</span>
+			</div>
+			
+			<div id="controle3Tela7Meio">
+				<div id="controle3Tela7MeioEsq">
+					<button id="btEscolhaEsqJ3"><img src="imagens/btEscolhaEsq.png" height="30%"></button>
+					<img id="corpoJog3" src="imagens/amostraCorpo.png" height="30%">
+					<button id="btEscolhaDirJ3"><img src="imagens/btEscolhaDir.png" height="30%"></button>
+					<br>
+					<button id="btEscolhaPeEsqJ3"><img src="imagens/btEscolhaEsq.png" height="30%"></button>
+					<img id="peJog3" src="imagens/amostraPe.png" height="30%">
+					<button id="btEscolhaPeDirJ3"><img src="imagens/btEscolhaDir.png" height="30%"></button>					
+				</div>
+				
+				<div id="controle3Tela7MeioDir">
+					<ul>
+						<li><span id="c3T7Velocidade">VELOCIDADE: </span><img id="estVelJ3" src="imagens/refEstatistica3.png" height="5%"></li>
+						<li><span id="c3T7Precisao">PRECISÃO: </span><img id="estPreJ3" src="imagens/refEstatistica6.png" height="5%"></li>
+						<li><span id="c3T7Forca">FORÇA: </span><img id="estForJ3" src="imagens/refEstatistica5.png" height="5%"></li>
+						<li><span id="c3T7Pulo">PULO: </span><img id="estPulJ3" src="imagens/refEstatistica4.png" height="5%"></li>
+				</div>
+			</div>
+			
+			<div id="controle3Tela7Baixo">
+				<button id="btNao5J3"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim5J3"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle3Tela7-->	
+
+<!--TELA 8-->			
+		<div id="controle3Tela8" class="view">
+			<div id="controle3Tela8Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c3T8Aguarde">AGUARDE OS INDECISOS...</span>
+			</div>
+			
+			<div id="controle3Tela8Meio" >
+				<div id="controle3Tela8MeioEsqA">
+					<span id="c3T8Jogador1">FULANO</span>
+					<div id="controle3Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkA.png"  width="25%">
+				</div>
+				<div id="controle3Tela8MeioEsqB">
+					<span id="c3T8Jogador2">FULANO</span>
+					<div id="controle3Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkA.png"  width="25%">
+				</div>
+				<div id="controle3Tela8MeioDirA">
+					<span id="c3T8Jogador3">FULANO</span>
+					<div id="controle3Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkB.png"  width="25%">				
+				</div>
+				<div id="controle3Tela8MeioDirB">
+					<span id="c3T8Jogador4">FULANO</span>
+					<div id="controle3Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkB.png"  width="25%">				
+				</div>
+			</div>
+			<div id="controle3Tela8Baixo">
+				<button id="btNao6J3"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim6J3"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle3Tela8-->	
+
+<!--TELA 9-->			
+		<div id="controle3Tela9" class="view">
+			<div id="controle3Tela9Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c3T9OlharJogo">OLHE PARA A TELA DO JOGO!</span>
+			</div>
+			
+			<div id="controle3Tela9Meio">
+				<div id="controle3Tela9MeioEsq">
+					<span id="c3T9Mover">MOVER</span><br>
+					<img src="imagens/refMovimento.png" height="85%">
+				</div>
+				
+				<div id="controle3Tela9MeioCen">
+					<span id="c3T9Chutar">CHUTAR</span><br>
+					<img src="imagens/refPulo.png" height="85%">
+				</div>
+				
+				<div id="controle3Tela9MeioDir">
+					<span id="c3T9Pular">PULAR</span><br>
+					<img src="imagens/refChute.png" height="85%">
+				</div>
+			</div>
+			
+			<div id="controle3Tela9Baixo">
+				<button id="btPareJ3"><img src="imagens/btPare.png" height="80%"></button>
+			</div>
+		</div><!--controle3Tela9-->	
+
+<!--TELA 10-->			
+		<div id="controle3Tela10" class="view">
+			<div id="controle3Tela10Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c3T10JogoParada">JOGO PARADO!</span>
+			</div>
+			
+			<div id="controle3Tela10Meio">
+				<div id="controle3Tela10MeioEsq">
+					<span id="c3T10Continuar">CONTINUAR JOGO</span><br>
+					<button id="btContinuar"><img src="imagens/btContinuar.png" height="70%"></button>
+				</div>
+				
+				<div id="controle3Tela10MeioCen">
+					<span id="c3T10Reiniciar">REINICIAR PARTIDA</span><br>
+					<button id="btReiniciar"><img src="imagens/btReiniciar.png" height="70%"></button>
+				</div>
+				
+				<div id="controle3Tela10MeioDir">
+					<span id="c3T10Voltar">VOLTAR AO MENU</span><br>
+					<button id="btMenu"><img src="imagens/btMenu.png" height="70%"></button>
+				</div>
+			</div>
+			
+			<div id="controle3Tela10Baixo">
+			</div>
+		</div><!--controle3Tela10-->
+
+<!--TELA 11-->			
+		<div id="controle3Tela11" class="view">
+			<div id="controle3Tela11Cima" >
+				<span><br></span><br>
+				<span><br></span><br>
+				<span id="c3T11Voltar">VOLTAR AO MENU?</span>
+			</div>
+			
+			<div id="controle3Tela11Meio">
+				<div id="controle3Tela11MeioEsq">
+					<button id="btSimVoto2J3"><img src="imagens/btSimVoto.png" height="70%"></button>
+				</div>
+				
+				<div id="controle3Tela11MeioDir">
+					<button id="btSimVoto2J3"><img src="imagens/btNaoVoto.png" height="70%"></button>
+				</div>
+			</div>
+			
+			<div id="controle3Tela11Baixo">
+			</div>
+		</div><!--controle3Tela11-->	
+
+<!--TELA 12-->			
+		<div id="controle3Tela12" class="view">
+			<div id="controle3Tela12Cima" >
+				<span><br></span><br>
+				<span><br></span><br>
+				<span id="c3T12JogoParado">JOGO PARADO</span>
+			</div>
+			
+			<div id="controle3Tela12Meio">
+					<img src="imagens/imgParado.png" height="70%">
+			</div>
+			
+			<div id="controle3Tela12Baixo">
+			</div>
+		</div><!--controle3Tela12-->
+
+<!--############################### CONTROLE 4 ###############################-->
+
+<!--TELA 3-->	
+		<div id="controle4Tela3" class="view">
+			<div id="controle4Tela3Cima" >
+				<span><br></span><br>
+				<span><br></span><br>			
+				<span id="c4T3Escolha">ESCOLHA SEU LADO!</span>
+			</div>
+			
+			<div id="controle4Tela3Meio" >
+				<div id="controle4Tela3MeioEsq">
+					<button id="btPosicao1J4" disabled="disabled"><img src="imagens/btPosicao1A.png" height="60%"></button>
+					<button id="btPosicao3J4"><img src="imagens/btPosicao3A.png" height="60%"></button>
+				</div>
+				
+				<div id="controle4Tela3MeioDir">
+					<button id="btPosicao2J4"><img src="imagens/btPosicao2A.png" height="60%"></button>
+					<button id="btPosicao4J4"><img src="imagens/btPosicao4A.png" height="60%"></button>
+				</div>
+			</div>
+			
+			<div id="controle4Tela3Baixo">
+				<button id="btNao2J4"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim2J4"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle4Tela3-->
+
+<!--TELA 4-->			
+		<div id="controle4Tela4" class="view">
+			<div id="controle4Tela4Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c4T4Certo">TUDO CERTO?</span>
+			</div>
+			
+			<div id="controle4Tela4Meio" >
+				<div id="controle4Tela4MeioEsq">
+					<button id="btSimVotoJ4"><img src="imagens/btSimVoto.png" height="60%"></button>
+				</div>
+				
+				<div id="controle4Tela4MeioDir">
+					<button id="btNaoVotoJ4"><img src="imagens/btNaoVoto.png" height="60%"></button>
+				</div>
+			</div>
+			
+			<div id="controle4Tela4Baixo">
+				<img src="imagens/caranguejo.png" height="50%">
+			</div>
+		</div><!--controle4Tela4-->		
+		
+
+<!--TELA 5-->			
+		
+<!--TELA 6-->			
+		<div id="controle4Tela6" class="view">
+			<div id="controle4Tela6Cima" >
+				<span><br></span><br>
+				<span><br></span><br>		
+				<span id="c4T6Configurar">COMO QUER SEU JOGO HOJE?</span>
+			</div>
+			
+			<div id="controle4Tela6Meio" >
+				<div id="controle4Tela6MeioEsq">
+				</div>
+				
+				<div id="controle4Tela6MeioCen">						
+				</div>
+				
+				<div id="controle4Tela6MeioDir">
+					<img id="golsImg" src="imagens/qtdGol.png" height="80%">
+				</div>
+			</div>
+			
+			<div id="controle4Tela6Baixo">
+				<button id="btNao4"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim4"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle4Tela6-->	
+
+<!--TELA 7-->			
+		<div id="controle4Tela7" class="view">
+			<div id="controle4Tela7Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c4T7Escolha">ESCOLHA SABIAMENTE!</span>
+			</div>
+			
+			<div id="controle4Tela7Meio">
+				<div id="controle4Tela7MeioEsq">
+					<button id="btEscolhaEsqJ4"><img src="imagens/btEscolhaEsq.png" height="30%"></button>
+					<img id="corpoJog4" src="imagens/amostraCorpo.png" height="30%">
+					<button id="btEscolhaDirJ4"><img src="imagens/btEscolhaDir.png" height="30%"></button>
+					<br>
+					<button id="btEscolhaPeEsqJ4"><img src="imagens/btEscolhaEsq.png" height="30%"></button>
+					<img id="peJog4" src="imagens/amostraPe.png" height="30%">
+					<button id="btEscolhaPeDirJ4"><img src="imagens/btEscolhaDir.png" height="30%"></button>					
+				</div>
+				
+				<div id="controle4Tela7MeioDir">
+					<ul>
+						<li><span id="c4T7Velocidade">VELOCIDADE: </span><img id="estVelJ4" src="imagens/refEstatistica3.png" height="5%"></li>
+						<li><span id="c4T7Precisao">PRECISÃO: </span><img id="estPreJ4" src="imagens/refEstatistica6.png" height="5%"></li>
+						<li><span id="c4T7Forca">FORÇA: </span><img id="estForJ4" src="imagens/refEstatistica5.png" height="5%"></li>
+						<li><span id="c4T7Pulo">PULO: </span><img id="estPulJ4" src="imagens/refEstatistica4.png" height="5%"></li>
+				</div>
+			</div>
+			
+			<div id="controle4Tela7Baixo">
+				<button id="btNao5J4"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim5J4"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle4Tela7-->	
+
+<!--TELA 8-->			
+		<div id="controle4Tela8" class="view">
+			<div id="controle4Tela8Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c4T8Aguarde">AGUARDE OS INDECISOS...</span>
+			</div>
+			
+			<div id="controle4Tela8Meio" >
+				<div id="controle4Tela8MeioEsqA">
+					<span id="c4T8Jogador1">FULANO</span>
+					<div id="controle4Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkA.png"  width="25%">
+				</div>
+				<div id="controle4Tela8MeioEsqB">
+					<span id="c4T8Jogador2">FULANO</span>
+					<div id="controle4Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkA.png"  width="25%">
+				</div>
+				<div id="controle4Tela8MeioDirA">
+					<span id="c4T8Jogador3">FULANO</span>
+					<div id="controle4Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkB.png"  width="25%">				
+				</div>
+				<div id="controle4Tela8MeioDirB">
+					<span id="c4T8Jogador4">FULANO</span>
+					<div id="controle4Tela8MeioEsqAFoto">
+						<img src="imagens/fotoIA.png" width="30%">
+					</div>
+					<img src="imagens/btOkB.png"  width="25%">				
+				</div>
+			</div>
+			<div id="controle4Tela8Baixo">
+				<button id="btNao6"><img src="imagens/btNao.png" height="80%"></button>
+				<img src="imagens/caranguejo.png" height="50%">
+				<button id="btSim6"><img src="imagens/btSim.png" height="80%"></button>
+			</div>
+		</div><!--controle4Tela8-->	
+
+<!--TELA 9-->			
+		<div id="controle4Tela9" class="view">
+			<div id="controle4Tela9Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c4T9OlharJogo">OLHE PARA A TELA DO JOGO!</span>
+			</div>
+			
+			<div id="controle4Tela9Meio">
+				<div id="controle4Tela9MeioEsq">
+					<span id="c4T9Mover">MOVER</span><br>
+					<img src="imagens/refMovimento.png" height="85%">
+				</div>
+				
+				<div id="controle4Tela9MeioCen">
+					<span id="c4T9Chutar">CHUTAR</span><br>
+					<img src="imagens/refPulo.png" height="85%">
+				</div>
+				
+				<div id="controle4Tela9MeioDir">
+					<span id="c4T9Pular">PULAR</span><br>
+					<img src="imagens/refChute.png" height="85%">
+				</div>
+			</div>
+			
+			<div id="controle4Tela9Baixo">
+				<button id="btPareJ4"><img src="imagens/btPare.png" height="80%"></button>
+			</div>
+		</div><!--controle4Tela9-->	
+
+<!--TELA 10-->			
+		<div id="controle4Tela10" class="view">
+			<div id="controle4Tela10Cima" >
+				<span><br></span><br>
+				<span><br></span><br>	
+				<span id="c4T10JogoParada">JOGO PARADO!</span>
+			</div>
+			
+			<div id="controle4Tela10Meio">
+				<div id="controle4Tela10MeioEsq">
+					<span id="c4T10Continuar">CONTINUAR JOGO</span><br>
+					<button id="btContinuar"><img src="imagens/btContinuar.png" height="70%"></button>
+				</div>
+				
+				<div id="controle4Tela10MeioCen">
+					<span id="c4T10Reiniciar">REINICIAR PARTIDA</span><br>
+					<button id="btReiniciar"><img src="imagens/btReiniciar.png" height="70%"></button>
+				</div>
+				
+				<div id="controle4Tela10MeioDir">
+					<span id="c4T10Voltar">VOLTAR AO MENU</span><br>
+					<button id="btMenu"><img src="imagens/btMenu.png" height="70%"></button>
+				</div>
+			</div>
+			
+			<div id="controle4Tela10Baixo">
+			</div>
+		</div><!--controle4Tela10-->
+
+<!--TELA 11-->			
+		<div id="controle4Tela11" class="view">
+			<div id="controle4Tela11Cima" >
+				<span><br></span><br>
+				<span><br></span><br>
+				<span id="c4T11Voltar">VOLTAR AO MENU?</span>
+			</div>
+			
+			<div id="controle4Tela11Meio">
+				<div id="controle4Tela11MeioEsq">
+					<button id="btSimVoto2J4"><img src="imagens/btSimVoto.png" height="70%"></button>
+				</div>
+				
+				<div id="controle4Tela11MeioDir">
+					<button id="btSimVoto2J4"><img src="imagens/btNaoVoto.png" height="70%"></button>
+				</div>
+			</div>
+			
+			<div id="controle4Tela11Baixo">
+			</div>
+		</div><!--controle4Tela11-->	
+
+<!--TELA 12-->			
+		<div id="controle4Tela12" class="view">
+			<div id="controle4Tela12Cima" >
+				<span><br></span><br>
+				<span><br></span><br>
+				<span id="c4T12JogoParado">JOGO PARADO</span>
+			</div>
+			
+			<div id="controle4Tela12Meio">
+					<img src="imagens/imgParado.png" height="70%">
+			</div>
+			
+			<div id="controle4Tela12Baixo">
+			</div>
+		</div><!--controle4Tela12-->			
+		
+<!--################################## FIM ######################################-->
+	</div><!--content-->
+</body> 
+</html> 

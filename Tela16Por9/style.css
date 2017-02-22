@@ -1,0 +1,18 @@
+* { margin:0; padding:0; }
+html, body {height:100%;}
+#tela {
+    min-height:100%; 
+    position:relative; 
+    width:100%;
+    margin: 0 auto;
+}
+#conteudo{ 
+    background: #3C948B;
+    position:absolute;
+    bottom:0; 
+    width:100%;
+    height: calc(width * 9/16); /* 16:9 Aspect Ratio */
+}
+img{
+  width: 100%;
+}

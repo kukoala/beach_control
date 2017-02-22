@@ -1,0 +1,187 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T8::PAUSE</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+</head>
+
+
+<style>
+    /****************************TOPO****************************/
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .875em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ede7f6;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+
+    }
+
+    /****************************CORPO****************************/
+
+    .t9corpo {
+
+        background-color: RGBA(134,134,255,1);
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+    }
+
+    /****************************DIVs CENTRAIS****************************/
+    .t9one {
+
+        /*background-color: #cccccc;*/
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t9two {
+
+        /*background-color: #FFFFFF;*/
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    /****************************OPÇÕES DE MENU****************************/
+    .t9one button {
+
+        border:none;
+        background: url("../imagens/btContinuar.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t9two button {
+
+        border:none;
+        background: url("../imagens/btMenu.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    /****************************RODAPE****************************/
+
+    .t9rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t9-rodape-wrapper {
+
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .t9-rodape-wrapper button {
+
+        border: none;
+        background: url("../imagens/crabController.gif") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+
+    }
+
+</style>
+<!--TELA 09 (PAUSE)-->
+
+<div id="9" class="view">
+
+    <!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="pause-title">Jogo Pausado</span>
+        </div>
+    </div>
+
+    <!--#############--OPÇÕES DE PAUSE--#############-->
+    <div class="t9corpo">
+        <div class="t9one"><button id="btn-continuar"></button></div>
+        <div class="t9two"><button id="btn-menu"></button></div>
+    </div>
+
+    <!--#############--RODAPE (PAUSADO)--#############-->
+    <div class="t9rodape">
+        <div class="t9-rodape-wrapper">
+            <button id="btn-pausa"></button>
+        </div>
+    </div>
+</div>

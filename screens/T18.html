@@ -1,0 +1,188 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T18::JOGADORE DESCONECTADO</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+</head>
+
+
+<style>
+    /****************************TOPO****************************/
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,1) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: .875em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #ede7f6;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+
+    }
+
+    /****************************CORPO****************************/
+    .t18corpo {
+
+        background-color: RGBA(134,134,255,1);
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+    }
+
+    /*******DIVs CENTRAIS*******/
+    .t18one {
+
+        /*background-color: #cccccc;*/
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t18two {
+
+        /*background-color: #FFFFFF;*/
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    /*******OPÇÕES DE MENU*******/
+    .t18one button {
+
+        border:none;
+        background: url("../imagens/btReiniciar.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t18two button {
+
+        border:none;
+        background: url("../imagens/btMenu.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    /*******RODAPE*******/
+
+    .t18rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t18-rodape-wrapper {
+
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .t18-rodape-wrapper button {
+
+        border: none;
+        background: url("../imagens/crabController.gif") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+
+    }
+
+</style>
+<!--TELA 18 (JOGADOR DESCONECTADO)-->
+
+<div id="18" class="view">
+
+    <!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="desconection-title">jogador em partida desconectado</span>
+            <span id="desconection-sub-title">Volte ao menu ou <i>aguarde a reconexão</i></span>
+        </div>
+    </div>
+
+    <!--#############--OPÇÕES RECONEXÃO--#############-->
+    <div class="t18corpo">
+        <div class="t18two"><button id="t18-btn-menu"></button></div>
+        <div class="t18one"><button id="#"></button></div>
+    </div>
+
+    <!--#############--RODAPE (RECONEXÃO)--#############-->
+    <div class="t18rodape">
+        <div class="t18-rodape-wrapper">
+            <button></button>
+        </div>
+    </div>
+
+</div>

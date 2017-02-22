@@ -1,0 +1,188 @@
+<head>
+    <!--############################################ CONFIGURAÇÕES ###########################################-->
+    <!-- Configurações de exibição da página-->
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="../imagens/icon.png" rel="shortcut icon">
+    <title>T14::CONFIRMAÇÃO DESISTIR PARTIDA</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+
+</head>
+
+
+<style>
+    /****************************TOPO****************************/
+    .topo {
+
+        margin:0 auto;
+        background:url("../imagens/sol.png") RGBA(134,134,255,.5) no-repeat left center;
+        background-size:15%;
+        width:100%;
+        height:30%;
+        text-align:center;
+
+    }
+
+    .topo-wrapper{
+
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .topo span {
+
+        font-family: 'PT Sans Caption', sans-serif;
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #b71c1c;
+        line-height: 150%;
+        text-rendering: optimizelegibility;
+        letter-spacing: .8pt;
+
+    }
+
+    /*************CORPO*************/
+    .t14corpo {
+
+        background-color: RGBA(134,134,255,.5);
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+    }
+
+    /*************DIVs CENTRAIS*************/
+    .t14one {
+
+        /*background-color: #cccccc;*/
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .t14two {
+
+        /*background-color: #FFFFFF;*/
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    /*************OPÇÕES DE MENU*************/
+    .t14one button {
+
+        border:none;
+        background: url("../imagens/btSimVoto.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    .t14two button {
+
+        border:none;
+        background: url("../imagens/btNaoVoto.png") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 60%;
+        height: 60%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    /*************RODAPE*************/
+
+    .t14rodape {
+
+        background-color: #fff9c4;
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .t14-rodape-wrapper {
+
+        width: 70%;
+        height: 70%;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    .t14-rodape-wrapper button {
+
+        border: none;
+        background: url("../imagens/crabController.gif") no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: 0 auto;
+
+    }
+
+    @media (min-width: 900px) {
+
+        .topo span {
+
+            font-size: 1.5em;
+
+        }
+
+    }
+
+    @media (min-width: 1500px) {
+
+        .topo span {
+
+            font-size: 2em;
+
+        }
+
+    }
+
+</style>
+<!--TELA 10 (CONFIRMAÇÃO DESISTENCIA DE PARTIDA)-->
+
+<div id="14" class="view">
+
+    <!--#############--TOPO--#############-->
+    <div class="topo">
+        <div class="topo-wrapper">
+            <span id="desitir-title">Do you really want to <br>quit the game and lose by WO?</span>
+        </div>
+    </div>
+
+    <!--#############--CONFIRMAÇÃO DE DESISTENCIA--#############-->
+    <div class="t14corpo">
+        <div class="t14one"><button id="t14-btn-sim"></button></div>
+        <div class="t14two"><button id="t14-btn-nao"></button></div>
+    </div>
+
+    <!--#############--RODAPE (PAUSADO)--#############-->
+    <div class="t14rodape">
+        <div class="t14-rodape-wrapper">
+            <button id="t14-btn-pausa"></button>
+        </div>
+    </div>
+
+</div>
