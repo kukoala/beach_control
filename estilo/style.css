@@ -9,23 +9,14 @@
 /***********************************************************************************************************************************************/
 html{overflow:hidden;}
 canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
-body{background:#000;}
-.view {display:none;}
+/*body{background:#000;}*/
+.view {overflow:hidden;}
 
 /***********************************************************************************************************************************************/
 /*Estilização dos controles                                                                                                                    */
 /***********************************************************************************************************************************************/
 /*                                                              Controle1                                                                      */
 /***********************************************************************************************************************************************/
-
-
-#controle1Tela0 {margin:0 auto; background:url("../imagens/logoKukoalaSplash.png") RGBA(255,255,255,1) no-repeat center center; background-size:25%; width:100%; height:100%;}
-
-/**Tela 01**/
-#controle1Tela1 {margin:0 auto; background:url("../imagens/logoJogoSplash.png") RGBA(134,134,255,1) no-repeat center center; background-size:35%; width:100%; height:100%;}
-
-
-
 
 /***************************************TOPO (COMUM A TODAS AS PÁGINAS***********************************************/
 .topo {
@@ -516,7 +507,7 @@ body{background:#000;}
 .t4clima-btn2 button {
 
     border: none;
-    background: url("../imagens/amostraCenario0.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
     width: 90%;
@@ -583,7 +574,7 @@ body{background:#000;}
 .t4bola-btn2 button {
 
     border: none;
-    background: url("../imagens/amostraBola0.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
     width: 90%;
@@ -1038,7 +1029,7 @@ body{background:#000;}
 .t6avatar-btn2 button {
 
     border: none;
-    background: url("../imagens/amostraCorpo.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
     width: 100%;
@@ -1116,7 +1107,7 @@ body{background:#000;}
 .t6pe-btn2 button {
 
     border: none;
-    background: url("../imagens/amostraPe.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
     width: 100%;
@@ -1175,7 +1166,7 @@ body{background:#000;}
 
     width: 50%;
     height: 100%;
-    background: url("../imagens/refEstatistica3.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
 
@@ -1219,7 +1210,7 @@ body{background:#000;}
     /*background-color: #ff9800;*/
     width: 50%;
     height: 100%;
-    background: url("../imagens/refEstatistica4.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
 
@@ -1260,7 +1251,7 @@ body{background:#000;}
 
     width: 50%;
     height: 100%;
-    background: url("../imagens/refEstatistica5.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
 
@@ -1301,7 +1292,7 @@ body{background:#000;}
 
     width: 50%;
     height: 100%;
-    background: url("../imagens/refEstatistica6.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
 
@@ -1460,7 +1451,7 @@ body{background:#000;}
 .t7p1 {
 
     border: none;
-    background: url("../imagens/teste.jpg") no-repeat;
+    background: none;
     background-position: center;
     background-size: 100%;
     background-color: #1565c0;
@@ -1477,7 +1468,7 @@ body{background:#000;}
 .t7p2 {
 
     border: none;
-    background: url("../imagens/teste2.jpg") no-repeat;
+    background: none;
     background-position: center;
     background-size: 100%;
     background-color: #1565c0;
@@ -1543,7 +1534,7 @@ body{background:#000;}
 .t7statusbtn-A {
 
     border: none;
-    background: url("../imagens/btNao.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
     width: 20%;
@@ -1556,7 +1547,7 @@ body{background:#000;}
 .t7statusbtn-B {
 
     border: none;
-    background: url("../imagens/btSim.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
     width: 20%;
@@ -1569,7 +1560,7 @@ body{background:#000;}
 .t7statusbtn-C {
 
     border: none;
-    background: url("../imagens/btSim.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
     width: 20%;
@@ -1582,7 +1573,7 @@ body{background:#000;}
 .t7statusbtn-D {
 
     border: none;
-    background: url("../imagens/btNao.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: contain;
     width: 20%;
@@ -2373,7 +2364,7 @@ body{background:#000;}
 .t15one button {
 
     border:none;
-    background: url("../imagens/aguardando.gif") no-repeat;
+    background: url("../imagens/aguarde.gif") no-repeat;
     background-position: center;
     background-size: contain;
     width: 80%;
@@ -2443,7 +2434,7 @@ body{background:#000;}
 .t16one button {
 
     border:none;
-    background: url("../imagens/haha.gif") no-repeat;
+    background: url("../imagens/imgParado.png") no-repeat;
     background-position: center;
     background-size: contain;
     width: 80%;
@@ -2526,7 +2517,7 @@ body{background:#000;}
 .t17one button {
 
     border:none;
-    background: url("../imagens/btReiniciar.png") no-repeat;
+    background: url("../imagens/aguardarConexao.png") no-repeat;
     background-position: center;
     background-size: contain;
     width: 60%;

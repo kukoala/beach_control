@@ -1,5 +1,3 @@
-
-
 // Cria as vari�veis necess�rias para os comandos a ser executado
 var gamma;
 var beta;
@@ -32,7 +30,7 @@ function carregarScript (scriptAdded, acJS){
 // Chama a fun��o que pr�-carrega os scripts necess�rios para a p�gina
 carregarScript("scripts/jquery.mobile-1.4.5.min.js",false)
 carregarScript("scripts/jquery-1.11.3.min.js",false)
-carregarScript("scripts/airconsole-1.6.0.js",true)
+carregarScript("scripts/airconsole-1.7.0.js",true)
 
  
 // Fun��o de inicia��o da p�gina
@@ -60,34 +58,34 @@ function update()
 
 		if(gamma < -75 && gamma > -90){
 			
-				mandaMsg("jump");
+				mandaMsg("move:2");
 							
 		}else if(gamma > 45 && gamma < 90){
 				
-				mandaMsg("jump");
+				mandaMsg("move:2");
 								
 		}else if (gamma > -30 && gamma < 0){
 			
-				mandaMsg("kick");
+				mandaMsg("move:4");
 								
 		}else if(gamma > 0 && gamma < 45){
 			
-				mandaMsg("kick");
+				mandaMsg("move:4");
 							
 		}
 
 		
 		if(beta < -20){
 			
-			mandaMsg("left");
+			mandaMsg("move:1");
 			
 		}else if (beta > 20){
 			
-			mandaMsg("right");
+			mandaMsg("move:3");
 			
 		}else{
 			
-			mandaMsg("stop");
+			mandaMsg("move:0");
 		
 		}
 		

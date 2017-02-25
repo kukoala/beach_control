@@ -39,16 +39,6 @@
 </head>
 
 <div id="content">
-
-    <div id="controle1Tela0" class="view">
-
-    </div><!--controle1Tela0-->
-
-    <!--TELA 1-->
-    <div id="controle1Tela1" class="view">
-
-    </div><!--controle1Tela1-->
-
 <!--------------------------TELA 01 (ESCOLHA DO CONTROLE MASTER)-------------------------->
 <div id="1" class="view">
     <!--#############--TOPO--#############-->
@@ -61,7 +51,7 @@
     <!--#############--CORPO--#############-->
     <div class="t1corpo">
         <div class="t1one">
-            <button id="#master-screen"></button>
+            <button id="master-screen"></button>
         </div>
     </div>
     <!--#############--RODAPE--#############-->
@@ -78,6 +68,7 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
+			<span id="idioma-title"></span>
             <span>Português</span>
             <span>English</span>
         </div>
@@ -110,7 +101,7 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="modo-title">Selecione o modo de Jogo</span>
+            <span id="modo-title"></span>
         </div>
     </div>
     <!--#############--CORPO--#############-->
@@ -142,7 +133,7 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="cenario-title">Experimente bolas diferentes</span>
+            <span id="cenario-title"></span>
         </div>
     </div>
 
@@ -160,7 +151,7 @@
                     </div>
 
                     <div class="t4clima-btn2">
-                        <button id="btncampo"></button>
+                        <button><img id="btncampo" src="imagens/amostraCenario0.png" height="80%" width="90%"></button>
                     </div>
 
                     <div class="t4clima-btn3">
@@ -180,7 +171,7 @@
                     </div>
 
                     <div class="t4bola-btn2">
-                        <button id="btnbola"></button>
+                        <button><img id="btnbola" src="imagens/amostraBola0.png" height="80%" width="90%"></button>
                     </div>
 
                     <div class="t4bola-btn3">
@@ -225,20 +216,22 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="time-title">Escolha sua posição 000</span>
-            <span id="time-title-1">Escolha sua posição 111</span>
+            <span id="time-title"></span>
+            <span id="time-title-1"></span>
         </div>
     </div>
 
     <!--#############--SELEÇÃO DE TIME--#############-->
     <div class="t5corpo">
         <div class="t5one">
+			<img id="posicao1" src="imagens/iaAtivado.png">
             <button id="btnA"></button>
-            <span id="msg-position-A">Rafael</span>
+            <span id="msg-position-A"></span>
         </div>
         <div class="t5two">
+			<img id="posicao3" src="imagens/iaAtivado.png">
             <button id="btnC"></button>
-            <span id="msg-position-C">José Astolfo</span>
+            <span id="msg-position-C"></span>
         </div>
 
         <div class="t5middle">
@@ -246,12 +239,14 @@
         </div>
 
         <div class="t5three">
+			<img id="posicao4" src="imagens/iaAtivado.png">
             <button id="btnD"></button>
-            <span id="msg-position-D">Computador</span>
+            <span id="msg-position-D"></span>
         </div>
         <div class="t5four">
+			<img id="posicao2" src="imagens/iaAtivado.png">
             <button id="btnB"></button>
-            <span id="msg-position-B">Vazio</span>
+            <span id="msg-position-B"></span>
         </div>
     </div>
 
@@ -277,7 +272,7 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="personalizacao-title">Escolha seu personagem</span>
+            <span id="personalizacao-title"></span>
         </div>
     </div>
 
@@ -297,7 +292,7 @@
                     </div>
 
                     <div class="t6avatar-btn2">
-                        <button id="btn-corpo"></button>
+                        <button><img id="btn-corpo" src="imagens/corpo0.png" height="80%" width="90%"></button>
                     </div>
 
                     <div class="t6avatar-btn3">
@@ -316,7 +311,7 @@
                     </div>
 
                     <div class="t6pe-btn2">
-                        <button id="btn-pe"></button>
+                        <button><img id="btn-pe" src="imagens/pe0.png" height="80%" width="90%"></button>
                     </div>
 
                     <div class="t6pe-btn3">
@@ -331,26 +326,26 @@
 
             <!--#############--VELOCIDADE--#############-->
             <div class="t6three-wrapper">
-                <div class="t6three-left"><span>VELOCIDADE: </span></div>
-                <div class="t6three-right" id="msg-velocidade"></div>
+                <div class="t6three-left"><span id="msg-velocidade"></span></div>
+                <div class="t6three-right"><img id="imgVelocidade" src="imagens/refEstatistica4.png"></div>
             </div>
 
             <!--#############--PRECISÃO--#############-->
             <div class="t6four-wrapper">
-                <div class="t6four-left"><span>PRECISÃO: </span></div>
-                <div class="t6four-right" id="msg-precisao"></div>
+                <div class="t6four-left"><span id="msg-precisao"></span></div>
+                <div class="t6four-right"><img id="imgPrecisao" src="imagens/refEstatistica5.png"></div>
             </div>
 
             <!--#############--FORÇA--#############-->
             <div class="t6five-wrapper">
-                <div class="t6five-left"><span>FORÇA: </span></div>
-                <div class="t6five-right" id="msg-forca"></div>
+                <div class="t6five-left"><span id="msg-forca"></span></div>
+                <div class="t6five-right"><img id="imgForca" src="imagens/refEstatistica5.png"></div>
             </div>
 
             <!--#############--PULO--#############-->
             <div class="t6six-wrapper">
-                <div class="t6six-left"><span>PULO: </span></div>
-                <div class="t6six-right" id="msg-pulo"></div>
+                <div class="t6six-left"><span id="msg-pulo"></span></div>
+                <div class="t6six-right"><img id="imgPulo" src="imagens/refEstatistica4.png"></div>
             </div>
         </div>
 
@@ -382,22 +377,22 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="aguardando-title">Aguardando os indecisos</span>
+            <span id="aguardando-title"></span>
         </div>
     </div>
 
     <!--#############--AGUARDANDO OS INDECISOS--#############-->
     <div class="t7corpo">
         <div class="t7one">
-            <button id="pic-posicao01" class="t7p1"></button><!--FOTOS-->
-            <button class="t7statusbtn-A" id="btn-status-posicao01"></button><!--STATUS-->
-            <span id="msg-position01">Rafael</span><!--NOME-->
+            <button id="pic-posicao01" class="t7p1" src=""></button><!--FOTOS-->
+            <button class="t7statusbtn-A" id="btn-status-posicao01"><img id="status01" src="imagens/btSim.png"></button><!--STATUS-->
+            <span id="msg-position01"></span><!--NOME-->
         </div>
 
         <div class="t7two">
-            <button id="pic-posicao03"class="t7p3"></button><!--FOTOS-->
-            <button class="t7statusbtn-C" id="btn-status-posicao03"></button><!--STATUS-->
-            <span id="msg-position03">José Astolfo</span><!--NOME-->
+            <button id="pic-posicao03"class="t7p3" src=""></button><!--FOTOS-->
+            <button class="t7statusbtn-C" id="btn-status-posicao03"><img id="status03" src="imagens/btSim.png"></button><!--STATUS-->
+            <span id="msg-position03"></span><!--NOME-->
         </div>
 
         <div class="t7middle">
@@ -405,14 +400,14 @@
         </div>
 
         <div class="t7three">
-            <button id="pic-posicao04"class="t7p4"></button><!--FOTOS-->
-            <button class="t7statusbtn-D" id="btn-status-posicao04"></button><!--STATUS-->
-            <span id="msg-position04">Computador</span><!--NOME-->
+            <button id="pic-posicao04" class="t7p4" src="" ></button><!--FOTOS-->
+            <button class="t7statusbtn-D" id="btn-status-posicao04"><img id="status04" src="imagens/btSim.png"></button><!--STATUS-->
+            <span id="msg-position04"></span><!--NOME-->
         </div>
         <div class="t7four">
-            <button id="pic-posicao02"class="t7p2"></button><!--FOTOS-->
-            <button class="t7statusbtn-B" id="btn-status-posicao02"></button><!--STATUS-->
-            <span id="msg-position02">Vazio</span><!--NOME-->
+            <button id="pic-posicao02"class="t7p2" src=""></button><!--FOTOS-->
+            <button class="t7statusbtn-B" id="btn-status-posicao02"><img id="status02" src="imagens/btSim.png"></button><!--STATUS-->
+            <span id="msg-position02"></span><!--NOME-->
         </div>
     </div>
 
@@ -438,15 +433,15 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="control-title">Você está olhando para a tela errada</span>
+            <span id="control-title"></span>
         </div>
     </div>
 
     <!--#############--IMAGENS DE REFERENCIA--#############-->
     <div class="t8corpo">
-        <div class="t8one"><button id="btn-movimento"></button><span id="movimento"> Movimentar</span></div>
-        <div class="t8two"><button id="btn-pulo"></button><span id="pulo">pulo</span></div>
-        <div class="t8three"><button id="btn-chute"></button><span id="chute">chute</span></div>
+        <div class="t8one"><button id="btn-movimento"></button><span id="movimento"> </span></div>
+        <div class="t8two"><button id="btn-pulo"></button><span id="pulo"></span></div>
+        <div class="t8three"><button id="btn-chute"></button><span id="chute"></span></div>
     </div>
 
     <!--#############--RODAPE (PAUSE)--#############-->
@@ -464,7 +459,7 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="pause-title">Jogo Pausado</span>
+            <span id="pause-title"></span>
         </div>
     </div>
 
@@ -489,7 +484,7 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="pause-encerra-title">deseja encerrar a partida?</span>
+            <span id="pause-encerra-title"></span>
         </div>
     </div>
 
@@ -513,8 +508,8 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span>Jogo parado</span>
-            <span>Aguarde o reinicio</span>
+            <span></span>
+            <span></span>
         </div>
     </div>
     <!--#############--CORPO--#############-->
@@ -541,8 +536,8 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="t13-msg-aguarde">(Player name) é o dono da bola!<br>Aguarde ele dar o play</span>
-            <span id="t13-msg-inativo">Outro Jogo está rolando<br>Aproveite para estudar os adeversários</span>
+            <span id="t13-msg-aguarde"></span>
+            <span id="t13-msg-inativo"></span>
         </div>
     </div>
     <!--#############--CORPO--#############-->
@@ -571,7 +566,7 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="desitir-title">Se abandonar a partida, seu oponente vencerá por W.O<br>Deseja mesmo abandonar?</span>
+            <span id="desitir-title"></span>
         </div>
     </div>
 
@@ -598,9 +593,9 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="idioma-title-1">José Godofredo está vendo se termina <br>o cursinho de inglês a tempo.</span>
-            <span id="modo-title-1">Aguarde o dono da bola chegar</span>
-            <span id="cenario-title-1">Aguarde estamos enchendo a bola para você jogar</span>
+            <span id="idioma-title-1">teste</span>
+            <span id="modo-title-1">teste</span>
+            <span id="cenario-title-1">teste</span>
         </div>
     </div>
     <!--#############--CORPO--#############-->
@@ -627,7 +622,7 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="exceptions-title">Limite de Jogadores atingido<br>Fale com os jogadores para reiniciar a sessão</span>
+            <span id="exceptions-title"></span>
         </div>
     </div>
     <!--#############--CORPO--#############-->
@@ -655,7 +650,7 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="finish-title">FINAL DO TORNEIO</span>
+            <span id="finish-title"></span>
         </div>
     </div>
 
@@ -682,8 +677,8 @@
     <!--#############--TOPO--#############-->
     <div class="topo">
         <div class="topo-wrapper">
-            <span id="desconection-title">jogador em partida desconectado</span>
-            <span id="desconection-sub-title">Volte ao menu ou <i>aguarde a reconexão</i></span>
+            <span id="desconection-title"></span>
+            <span id="desconection-sub-title"></i></span>
         </div>
     </div>
 
