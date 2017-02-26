@@ -18,6 +18,7 @@ var peForca;
 var pePrecisao; 
 var pePulo;
 var currentView;
+var master = "não";
 
 //Função para controlar as views do controle
 var showView = function(id) {
@@ -36,7 +37,7 @@ var showView = function(id) {
 	
 };
 
-showView("16");//troca tela
+showView("7");//troca tela
 
 var sendHandshake = function() {
     airconsole.message(AirConsole.SCREEN, {
@@ -447,17 +448,98 @@ airconsole.onMessage = function(device_id, data) {
 		var dict = {};		
 		dict = stringToJson(data);
 		
+		if(dict.master){
+			
+			master = dict.master;
+			
+		}
+		
 		if(dict.view){
 			
+			if(dict.view == 5){				
+				if(master == "não"){
+					document.getElementById("t5-btn-voltar").style.display = "none";
+					document.getElementById("t5-btn-avancar").style.display = "none";					
+				}
+			}
+			
+			if(dict.view == 6){				
+				if(master == "não"){
+					document.getElementById("t6-btn-voltar").style.display = "none";				
+				}				
+			}
 			showView(dict.view);
 			
 		}
 		
-		if(dict.posselecionada){ 
+		if(dict.posicaoA){
+
+			if(dict.posicaoA == "IA"){
+				
+				document.getElementById("posicao1").src = "imagens/iaAtivado.png";
+				
+			}else if(dict.posicaoA == "jogador"){
+				
+				document.getElementById("posicao1").src = "imagens/playerAtivado.png";
+				
+			}else{
+				
+				document.getElementById("posicao1").src = "imagens/bloqueado.png";
+				
+			}
+		
+		}
+		if(dict.posicaoB){
 			
-			
+			if(dict.posicaoB == "IA"){
+				
+				document.getElementById("posicao2").src = "imagens/iaAtivado.png";
+				
+			}else if(dict.posicaoB == "jogador"){
+				
+				document.getElementById("posicao2").src = "imagens/playerAtivado.png";
+				
+			}else{
+				
+				document.getElementById("posicao2").src = "imagens/bloqueado.png";
+				
+			}
 			
 		}
+		if(dict.posicaoC){
+			
+			if(dict.posicaoC == "IA"){
+				
+				document.getElementById("posicao3").src = "imagens/iaAtivado.png";
+				
+			}else if(dict.posicaoC == "jogador"){
+				
+				document.getElementById("posicao3").src = "imagens/playerAtivado.png";
+				
+			}else{
+				
+				document.getElementById("posicao3").src = "imagens/bloqueado.png";
+				
+			}
+			
+		}
+		if(dict.posicaoD){
+			
+			if(dict.posicaoD == "IA"){
+				
+				document.getElementById("posicao4").src = "imagens/iaAtivado.png";
+				
+			}else if(dict.posicaoD == "jogador"){
+				
+				document.getElementById("posicao4").src = "imagens/playerAtivado.png";
+				
+			}else{
+				
+				document.getElementById("posicao4").src = "imagens/bloqueado.png";
+				
+			}
+			
+		}		
 	
 	if(dict['exceptions-title']){ aplicaTextos("exceptions-title", dict['exceptions-title']); }
 	if(dict['idioma-title']){ aplicaTextos("idioma-title", dict['idioma-title']); }
@@ -637,53 +719,19 @@ $('#t3-btn-voltar').on('touchstart click', function(e){
 
 //################################## BOTõES DE SELEÇAO CAMPOS E TIPO DE BOLAS T4 ##########################################################################		
 
-//**********************************Configurar Campo******************************************
-// Botão selecao de campo navegar à esquerda
-$('#btncampo-ESQ').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("config:0:1");		
-		
-});
-
-
-// Botão selecao de campo navega à direita
-$('#btncampo-DIR').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("config:0:1");	
-		
-});
-//**********************************Configurar Bola******************************************
-// Botão selecao de tipo de bola navegar à esquerda
-$('#btnbola-ESQ-ESQ').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("config:0:1");		
-		
-});
-
-
-// Botão selecao de tipo de bola navega à direita
-$('#btnbola-DIR').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("config:0:1");	
-		
-});
 //**********************************Configurar confirmação/negação******************************************
 // Botão para voltar tela anterior
 $('#t4-btn-voltar').on('touchstart click', function(e){
 		e.stopPropagation(); e.preventDefault();			
 			
-		mandaMsg("config:voltar:0");	
+		mandaMsg("configj:voltar:0");	
 		
 });
 // Botão avançar proxima tela
 $('#t4-btn-avancar').on('touchstart click', function(e){
 		e.stopPropagation(); e.preventDefault();			
 			
-		mandaMsg("config:avancar:0");	
+		mandaMsg("configj:"+cenario+":"+bola);
 		
 });
 
@@ -695,7 +743,8 @@ $('#t4-btn-avancar').on('touchstart click', function(e){
 $('#btnA').on('touchstart click', function(e){
 		e.stopPropagation(); e.preventDefault();			
 			
-		mandaMsg("posselecionada:a:0");//b/c/d	
+		mandaMsg("posselecionada:A:0");//b/c/d
+		console.log("testando");
 		
 });
 
@@ -703,7 +752,8 @@ $('#btnA').on('touchstart click', function(e){
 $('#btnC').on('touchstart click', function(e){
 		e.stopPropagation(); e.preventDefault();			
 			
-		mandaMsg("posselecionada:a:0");//b/c/d
+		mandaMsg("posselecionada:C:0");//b/c/d
+		console.log("testando");
 		
 });
 
@@ -711,7 +761,8 @@ $('#btnC').on('touchstart click', function(e){
 $('#btnD').on('touchstart click', function(e){
 		e.stopPropagation(); e.preventDefault();			
 			
-		mandaMsg("posselecionada:a:0");//b/c/d
+		mandaMsg("posselecionada:D:0");//b/c/d
+		console.log("testando");
 		
 });
 
@@ -719,7 +770,8 @@ $('#btnD').on('touchstart click', function(e){
 $('#btnB').on('touchstart click', function(e){
 		e.stopPropagation(); e.preventDefault();			
 			
-		mandaMsg("posselecionada:a:0");//b/c/d
+		mandaMsg("posselecionada:B:0");//b/c/d
+		console.log("testando");
 		
 });
 
@@ -743,41 +795,6 @@ $('#t5-btn-avancar').on('touchstart click', function(e){
 
 //################################## BOTõES DE SELEÇAO PERSONAGENS E PES T6 ##########################################################################		
 
-//**********************************Selecao Personagem******************************************
-// Botão navega personagem à esquerda
-$('#btncorpo-ESQ').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("configp:0:1");
-		
-});
-
-// Botão navega persoangem à direita
-$('#btncorpo-DIR').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("configp:0:1");
-		
-});
-
-//**********************************Selecao Pé******************************************
-// Botão navega pé à esquerda
-$('#btnpe-ESQ-ESQ').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("configp:0:1");
-		
-});
-
-// Botão navega pé à direita
-$('#btnpe-DIR').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("configp:0:1");
-		
-});
-
-
 //**********************************Configurar confirmação/negação******************************************
 // Botão para voltar tela anterior
 $('#t6-btn-voltar').on('touchstart click', function(e){
@@ -790,7 +807,8 @@ $('#t6-btn-voltar').on('touchstart click', function(e){
 $('#t6-btn-avancar').on('touchstart click', function(e){
 		e.stopPropagation(); e.preventDefault();			
 			
-		mandaMsg("configp:confirma:0");
+		mandaMsg("configp:"+corpoJog+":"+peJog);
+		mandaMsg("jogadorpronto:1:0");
 		
 });
 
@@ -799,30 +817,22 @@ $('#t6-btn-avancar').on('touchstart click', function(e){
 //**********************************Status de jogadores******************************************
 // Botão aguardar jogador posicao 01
 $('#btn-status-posicao01').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("jogadorpronto:1:0");//0/1
+		e.stopPropagation(); e.preventDefault();
 		
 });
 // Botão aguardar jogador posicao 03
 $('#btn-status-posicao03').on('touchstart click', function(e){
 		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("jogadorpronto:1:0");//0/1
-		
+	
 });
 // Botão aguardar jogador posicao 04
 $('#btn-status-posicao04').on('touchstart click', function(e){
 		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("jogadorpronto:1:0");//0/1
-		
+
 });
 // Botão aguardar jogador posicao 02
 $('#btn-status-posicao02').on('touchstart click', function(e){
-		e.stopPropagation(); e.preventDefault();			
-			
-		mandaMsg("jogadorpronto:1:0");//0/1
+		e.stopPropagation(); e.preventDefault();		
 		
 });
 

@@ -448,7 +448,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 .t4three {
 
     width: 35%;
-    height: 100%;
+    /*height: 100%;*/
     background: url("../imagens/qtdGol.png") no-repeat;
     background-position: center;
     background-size: contain;
@@ -517,6 +517,12 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 }
 
+.t4clima-btn2 img {
+
+    max-width: 100%;
+
+}
+
 .t4clima-btn3 button {
 
     border: none;
@@ -575,12 +581,18 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     border: none;
     background: none;
-    background-position: center;
-    background-size: contain;
-    width: 90%;
-    height: 90%;
-    display: flex;
-    margin: 0 auto;
+    /*background-position: center;*/
+    /*background-size: contain;*/
+    /*width: 90%;*/
+    /*height: 90%;*/
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+
+}
+
+.t4bola-btn2 img {
+
+    max-width: 100%;
 
 }
 
@@ -681,13 +693,13 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 #time-title {
 
-    display: none;
+    display: block;
 
 }
 
 #time-title-1 {
 
-    display: block;
+    display: none;
 
 }
 
@@ -753,26 +765,38 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 .t5one button {
 
     border: none;
-    background: url("../imagens/btPosicao1A.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 70%;
-    height: 70%;
-    display: flex;
-    margin: 0 auto;
+    background: none;
+    /*background-position: center;*/
+    /*background-size: contain;*/
+    /*width: 70%;*/
+    /*height: 70%;*/
+    /*display: flex;*/
+    /*margin: 0 auto;*/
 
+}
+
+.t5one img {
+    
+    max-height: 80%;
+    
 }
 
 .t5two button {
 
     border: none;
-    background: url("../imagens/btPosicao3A.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 70%;
-    height: 70%;
-    display: flex;
-    margin: 0 auto;
+    background: none;
+    /*background-position: center;*/
+    /*background-size: contain;*/
+    /*width: 70%;*/
+    /*height: 70%;*/
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+
+}
+
+.t5two img {
+
+    max-height: 80%;
 
 }
 
@@ -792,26 +816,38 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 .t5three button {
 
     border: none;
-    background: url("../imagens/btPosicao4A.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 70%;
-    height: 70%;
-    display: flex;
-    margin: 0 auto;
+    background: none;
+    /*background-position: center;*/
+    /*background-size: contain;*/
+    /*width: 70%;*/
+    /*height: 70%;*/
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+
+}
+
+.t5three img {
+
+    max-height: 80%;
 
 }
 
 .t5four button {
 
     border: none;
-    background: url("../imagens/btPosicao2A.png") no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 70%;
-    height: 70%;
-    display: flex;
-    margin: 0 auto;
+    background: none;
+    /*background-position: center;*/
+    /*background-size: contain;*/
+    /*width: 70%;*/
+    /*height: 70%;*/
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+
+}
+
+.t5four img {
+
+    max-height: 80%;
 
 }
 
@@ -824,6 +860,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     color: #1a237e;
     text-rendering: optimizelegibility;
     margin: 0 auto;
+    margin-top: 10%;
 }
 
 .t5two span {
@@ -835,6 +872,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     color: #1a237e;
     text-rendering: optimizelegibility;
     margin: 0 auto;
+    margin-top: 10%;
 }
 
 .t5three span {
@@ -846,6 +884,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     color: #880e4f;
     text-rendering: optimizelegibility;
     margin: 0 auto;
+    margin-top: 10%;
 }
 
 .t5four span {
@@ -857,6 +896,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     color: #880e4f;
     text-rendering: optimizelegibility;
     margin: 0 auto;
+    margin-top: 10%;
 }
 
 .t5rodape {
@@ -970,7 +1010,6 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 .t6one {
 
-    /*background-color: #cccccc;*/
     width: 100%;
     height: 50%;
     display: flex;
@@ -988,7 +1027,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 .t6avatar-btn1 {
 
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -997,7 +1036,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 .t6avatar-btn2 {
 
-    width: 100%;
+    width: 200%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1006,7 +1045,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 .t6avatar-btn3 {
 
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1030,12 +1069,18 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     border: none;
     background: none;
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
+    /*background-position: center;*/
+    /*background-size: contain;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+
+}
+
+.t6avatar-btn2 img {
+    
+    max-width: 100%;
 
 }
 
@@ -1056,7 +1101,6 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 .t6two {
 
-    /*background-color: cadetblue;*/
     width: 100%;
     height: 50%;
     display: flex;
@@ -1066,7 +1110,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 .t6pe-btn1 {
 
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1075,7 +1119,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 .t6pe-btn2 {
 
-    width: 100%;
+    width: 200%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1084,7 +1128,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 .t6pe-btn3 {
 
-    width: 70%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -1108,12 +1152,18 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     border: none;
     background: none;
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    margin: 0 auto;
+    /*background-position: center;*/
+    /*background-size: contain;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*display: flex;*/
+    /*margin: 0 auto;*/
+
+}
+
+.t6pe-btn2 img {
+
+    max-width: 100%;
 
 }
 
@@ -1149,7 +1199,16 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     height: 25%;
     display: flex;
 
+
 }
+
+.t6three-wrapper img {
+
+    max-width: 100%;
+
+}
+
+
 
 .t6three-left {
 
@@ -1166,9 +1225,9 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     width: 50%;
     height: 100%;
-    background: none;
-    background-position: center;
-    background-size: contain;
+    display: flex;
+    align-items: center;
+    align-content: center;
 
 }
 
@@ -1194,6 +1253,12 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 }
 
+.t6four-wrapper img {
+
+    max-width: 100%;
+
+}
+
 .t6four-left {
 
     /*background-color: #ffcc80;*/
@@ -1210,9 +1275,9 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     /*background-color: #ff9800;*/
     width: 50%;
     height: 100%;
-    background: none;
-    background-position: center;
-    background-size: contain;
+    display: flex;
+    align-items: center;
+    align-content: center;
 
 }
 
@@ -1237,6 +1302,12 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 }
 
+.t6five-wrapper img {
+
+    max-width: 100%;
+
+}
+
 .t6five-left {
 
     width: 40%;
@@ -1251,9 +1322,9 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     width: 50%;
     height: 100%;
-    background: none;
-    background-position: center;
-    background-size: contain;
+    display: flex;
+    align-items: center;
+    align-content: center;
 
 }
 
@@ -1278,6 +1349,12 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 }
 
+.t6six-wrapper img {
+
+    max-width: 100%;
+
+}
+
 .t6six-left {
 
     width: 40%;
@@ -1292,9 +1369,9 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     width: 50%;
     height: 100%;
-    background: none;
-    background-position: center;
-    background-size: contain;
+    display: flex;
+    align-items: center;
+    align-content: center;
 
 }
 
@@ -1498,7 +1575,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 .t7p3 {
 
     border: none;
-    background: url("../imagens/amostraBola8.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: 100%;
     background-color: #1565c0;
@@ -1515,7 +1592,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 .t7p4 {
 
     border: none;
-    background: url("../imagens/refEstatistica6.png") no-repeat;
+    background: none;
     background-position: center;
     background-size: 100%;
     background-color: #1565c0;
@@ -1535,12 +1612,6 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     border: none;
     background: none;
-    background-position: center;
-    background-size: contain;
-    width: 20%;
-    height: 20%;
-    display: flex;
-    margin: 0 auto;
 
 }
 
@@ -1548,12 +1619,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     border: none;
     background: none;
-    background-position: center;
-    background-size: contain;
-    width: 20%;
-    height: 20%;
-    display: flex;
-    margin: 0 auto;
+
 
 }
 
@@ -1561,12 +1627,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     border: none;
     background: none;
-    background-position: center;
-    background-size: contain;
-    width: 20%;
-    height: 20%;
-    display: flex;
-    margin: 0 auto;
+
 
 }
 
@@ -1574,12 +1635,42 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
     border: none;
     background: none;
-    background-position: center;
-    background-size: contain;
-    width: 20%;
-    height: 20%;
-    display: flex;
-    margin: 0 auto;
+
+
+}
+
+.st01 {
+
+    width: 50px;
+    height: 50px;
+    justify-items: center;
+
+}
+
+.st02 {
+
+
+    width: 50px;
+    height: 50px;
+    justify-items: center;
+
+}
+
+.st03 {
+
+    width: 50px;
+    height: 50px;
+    justify-items: center;
+
+
+}
+
+.st04 {
+
+
+    width: 50px;
+    height: 50px;
+    justify-items: center;
 
 }
 
@@ -1594,6 +1685,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     color: #1a237e;
     text-rendering: optimizelegibility;
     margin: 0 auto;
+    margin-top: 12px;
 }
 
 .t7two span {
@@ -1605,6 +1697,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     color: #1a237e;
     text-rendering: optimizelegibility;
     margin: 0 auto;
+    margin-top: 12px;
 }
 
 .t7three span {
@@ -1616,6 +1709,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     color: #880e4f;
     text-rendering: optimizelegibility;
     margin: 0 auto;
+    margin-top: 12px;
 }
 
 .t7four span {
@@ -1627,6 +1721,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
     color: #880e4f;
     text-rendering: optimizelegibility;
     margin: 0 auto;
+    margin-top: 12px;
 }
 
 /************RODAPE************/
@@ -1679,7 +1774,7 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 .t7selection-btn1 button {
 
     border: none;
-    background: url("../imagens/btNao.png") no-repeat;
+    background: url("../imagens/btnVoltar.png") no-repeat;
     background-position: center;
     background-size: contain;
     width: 80%;
@@ -2332,13 +2427,13 @@ canvas{touch-action-delay:none; touch-action:none; -ms-touch-action:none;}
 
 #modo-title-1 {
 
-    display: none;/*****ATIVA OU DESATIVA MENSAGEM*****/
+    display: block;/*****ATIVA OU DESATIVA MENSAGEM*****/
 
 }
 
 #cenario-title-1 {
 
-    display: none;/*****ATIVA OU DESATIVA MENSAGEM*****/
+    display: block;/*****ATIVA OU DESATIVA MENSAGEM*****/
 
 }
 
